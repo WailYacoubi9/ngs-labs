@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { once } from 'node:events';
 import { fileURLToPath } from 'node:url';
 import { createExpressApp, createScratchApp } from '../app.js';
-import { reload, findModule } from '../repository.js';
+import { reload } from '../repository.js';
 
 // The same tests run on both servers: they must behave the same way
 const servers = {
@@ -12,6 +12,50 @@ const servers = {
 };
 
 const NEW_STUDENT = { ine: '0123456789a', firstName: 'dupont', lastName: 'jean' };
+
+// Answers of the lab 1 server (https://ppp.alwaysdata.net), recorded on 25 Oct 2026
+const LAB1_STUDENT = {
+  firstName: 'Lutero',
+  lastName: 'Lauryn',
+  ine: '657395330O',
+  email: ['lauryn.lutero@etu.univ-grenoble-alpes.fr'],
+  birthDate: '2000-02-04',
+  _links: { followed_modules: { href: '/students/657395330O/followed_modules' } },
+};
+
+const LAB1_PROF = {
+  firstName: 'Magnolia',
+  lastName: 'Sonni',
+  number: '697453889',
+  email: ['sonni.magnolia@univ-grenoble-alpes.fr'],
+  birthDate: '1992-01-31',
+  _links: { taught_modules: { href: '/profs/697453889/taught_modules' } },
+};
+
+const LAB1_MODULE = {
+  name: 'OOP',
+  label: 'Object-Oriented Programming',
+  description: 'Object-oriented programming concepts, principles, and design patterns.',
+  coefficient: 30,
+  evaluations: [
+    { type: 'lab', coefficient: 10 },
+    { type: 'project', coefficient: 10 },
+    { type: 'exam', coefficient: 10 },
+  ],
+  _links: {
+    enrolled_students: { href: '/modules/oop/enrolled_students' },
+    teachers: { href: '/modules/oop/teachers' },
+  },
+};
+
+const LAB1_TAUGHT_MODULES = ['WEB03', 'ARCHI02', 'WEB01', 'ARCHI01', 'OOP', 'ALGO01', 'ALGO02', 'MathSup', 'OOC', 'WEB02'].map(
+  (code) => ({ name: code, href: `/modules/${code.toLowerCase()}/` }),
+);
+
+const LAB1_OOP_TEACHERS = [
+  '697453889', '056891098', '402255813', '251962930', '867478389', '401417699',
+  '318985765', '203780717', '898975366', '184685666', '346070450',
+].map((number) => ({ name: number, href: `/profs/${number}/` }));
 
 for (const [serverName, createApp] of Object.entries(servers)) {
   describe(`Mosig API on ${serverName}`, () => {
@@ -78,44 +122,60 @@ for (const [serverName, createApp] of Object.entries(servers)) {
       it('returns the first 20 students by default', async () => {
         const res = await request('GET', '/students');
         assert.equal(res.status, 200);
-        assert.equal(res.body.total, 100);
-        assert.equal(res.body.page, 1);
-        assert.equal(res.body.limit, 20);
-        assert.equal(res.body.students.length, 20);
-        assert.deepEqual(res.body.students[0], {
+        assert.equal(res.body.data.length, 20);
+        assert.deepEqual(res.body.data[0], {
+          name: 'Lauryn L.',
           ine: '657395330O',
-          name: 'Lauryn Lutero',
           _links: { self: { href: '/students/657395330O' } },
         });
-        assert.deepEqual(res.body._links, {
-          self: { href: '/students?page=1&limit=20' },
-          next: { href: '/students?page=2&limit=20' },
+        assert.deepEqual(res.body.pagination, { page: 1, limit: 20, total: 100 });
+        assert.deepEqual(res.body.links, {
+          self: '/students?page=1&limit=20',
+          next: '/students?page=2&limit=20',
+        });
+      });
+
+      it('answers like the lab 1 server for page 2 of 3 students', async () => {
+        const res = await request('GET', '/students?page=2&limit=3');
+        assert.equal(res.status, 200);
+        assert.deepEqual(res.body, {
+          data: [
+            { name: 'Lusa B.', ine: '555094194B', _links: { self: { href: '/students/555094194B' } } },
+            { name: 'Jennica S.', ine: '449898176M', _links: { self: { href: '/students/449898176M' } } },
+            { name: 'Tina R.', ine: '191794613S', _links: { self: { href: '/students/191794613S' } } },
+          ],
+          pagination: { page: 2, limit: 3, total: 100 },
+          links: {
+            self: '/students?page=2&limit=3',
+            next: '/students?page=3&limit=3',
+            previous: '/students?page=1&limit=3',
+          },
         });
       });
 
       it('accepts a trailing slash', async () => {
         const res = await request('GET', '/students/');
         assert.equal(res.status, 200);
-        assert.equal(res.body.students.length, 20);
+        assert.equal(res.body.data.length, 20);
       });
 
-      it('handles page and limit', async () => {
+      it('handles the last page and the pages after it', async () => {
         const last = await request('GET', '/students?page=10&limit=10');
         assert.equal(last.status, 200);
-        assert.equal(last.body.students.length, 10);
-        assert.equal(last.body._links.prev.href, '/students?page=9&limit=10');
-        assert.equal(last.body._links.next, undefined);
+        assert.equal(last.body.data.length, 10);
+        assert.equal(last.body.links.previous, '/students?page=9&limit=10');
+        assert.equal(last.body.links.next, undefined);
 
         const beyond = await request('GET', '/students?page=11&limit=10');
         assert.equal(beyond.status, 200);
-        assert.deepEqual(beyond.body.students, []);
+        assert.deepEqual(beyond.body.data, []);
 
         const all = await request('GET', '/students?limit=100');
-        assert.equal(all.body.students.length, 100);
+        assert.equal(all.body.data.length, 100);
       });
 
       it('answers 400 when page or limit is invalid', async () => {
-        for (const query of ['page=0', 'page=abc', 'page=1.5', 'limit=0', 'limit=101', 'limit=-3']) {
+        for (const query of ['page=0', 'page=abc', 'page=1.5', 'limit=0', 'limit=101', 'limit=-1']) {
           const res = await request('GET', `/students?${query}`);
           assert.equal(res.status, 400, query);
           assert.equal(typeof res.body.error, 'string');
@@ -124,20 +184,10 @@ for (const [serverName, createApp] of Object.entries(servers)) {
     });
 
     describe('GET /students/:ine', () => {
-      it('returns the full representation of a student', async () => {
+      it('answers like the lab 1 server', async () => {
         const res = await request('GET', '/students/657395330O');
         assert.equal(res.status, 200);
-        assert.deepEqual(res.body, {
-          ine: '657395330O',
-          firstName: 'Lutero',
-          lastName: 'Lauryn',
-          email: ['lauryn.lutero@etu.univ-grenoble-alpes.fr'],
-          birthDate: '2000-02-04',
-          _links: {
-            self: { href: '/students/657395330O' },
-            modules: [{ code: 'WEB01', href: '/modules/WEB01' }],
-          },
-        });
+        assert.deepEqual(res.body, LAB1_STUDENT);
       });
 
       it('accepts a trailing slash', async () => {
@@ -149,7 +199,17 @@ for (const [serverName, createApp] of Object.entries(servers)) {
       it('answers 404 for an unknown student', async () => {
         const res = await request('GET', '/students/chopper');
         assert.equal(res.status, 404);
-        assert.deepEqual(res.body, { error: 'Student chopper not found' });
+        assert.deepEqual(res.body, { error: 'student not found' });
+      });
+
+      it('lists the modules followed by the student', async () => {
+        const res = await request('GET', '/students/657395330O/followed_modules');
+        assert.equal(res.status, 200);
+        assert.deepEqual(res.body.data, [{ name: 'WEB01', href: '/modules/web01/' }]);
+        assert.deepEqual(res.body.links, { self: '/students/657395330O/followed_modules?page=1&limit=20' });
+
+        const unknown = await request('GET', '/students/chopper/followed_modules');
+        assert.equal(unknown.status, 404);
       });
     });
 
@@ -167,7 +227,7 @@ for (const [serverName, createApp] of Object.entries(servers)) {
         assert.equal(fetched.body.lastName, 'jean');
 
         const list = await request('GET', '/students');
-        assert.equal(list.body.total, 101);
+        assert.equal(list.body.pagination.total, 101);
       });
 
       it('answers 409 when the ine already exists', async () => {
@@ -222,7 +282,8 @@ for (const [serverName, createApp] of Object.entries(servers)) {
         // email was not sent, so it is emptied
         assert.deepEqual(fetched.body.email, []);
         // the modules followed are not part of the attributes replaced by PUT
-        assert.equal(fetched.body._links.modules.length, 1);
+        const modules = await request('GET', '/students/657395330O/followed_modules');
+        assert.equal(modules.body.pagination.total, 1);
       });
 
       it('answers 400 when the body is incomplete or changes the ine', async () => {
@@ -256,15 +317,19 @@ for (const [serverName, createApp] of Object.entries(servers)) {
 
     describe('DELETE /students/:ine', () => {
       it('deletes the student and removes it from its modules', async () => {
-        assert.ok(findModule('WEB01').registeredStudents.includes('657395330O'));
+        const enrolled = async () => {
+          const res = await request('GET', '/modules/web01/enrolled_students?limit=100');
+          return res.body.data.map((student) => student.ine);
+        };
+        assert.ok((await enrolled()).includes('657395330O'));
 
         const res = await request('DELETE', '/students/657395330O');
         assert.equal(res.status, 204);
         assert.equal(res.body, null);
 
         assert.equal((await request('GET', '/students/657395330O')).status, 404);
-        assert.ok(!findModule('WEB01').registeredStudents.includes('657395330O'));
-        assert.equal((await request('GET', '/students')).body.total, 99);
+        assert.ok(!(await enrolled()).includes('657395330O'));
+        assert.equal((await request('GET', '/students')).body.pagination.total, 99);
       });
 
       it('answers 404 the second time', async () => {
@@ -277,30 +342,36 @@ for (const [serverName, createApp] of Object.entries(servers)) {
       it('lists the profs', async () => {
         const res = await request('GET', '/profs');
         assert.equal(res.status, 200);
-        assert.equal(res.body.total, 20);
-        assert.deepEqual(res.body.profs[0], {
+        assert.deepEqual(res.body.pagination, { page: 1, limit: 20, total: 20 });
+        assert.deepEqual(res.body.data[0], {
+          name: 'Sonni M.',
           number: '697453889',
-          name: 'Sonni Magnolia',
           _links: { self: { href: '/profs/697453889' } },
         });
       });
 
-      it('returns one prof with links to the modules taught', async () => {
-        const res = await request('GET', '/profs/547367905');
+      it('answers like the lab 1 server for one prof', async () => {
+        const res = await request('GET', '/profs/697453889');
         assert.equal(res.status, 200);
-        assert.equal(res.body.lastName, 'Annice');
-        assert.equal(res.body.office, 'DG-227');
-        assert.deepEqual(res.body._links.modules, [{ code: 'MathSup', href: '/modules/MathSup' }]);
+        assert.deepEqual(res.body, LAB1_PROF);
       });
 
-      it('returns null for the category missing in data.json', async () => {
-        const res = await request('GET', '/profs/346070450');
+      it('lists the modules taught by the prof, like the lab 1 server', async () => {
+        const res = await request('GET', '/profs/697453889/taught_modules');
         assert.equal(res.status, 200);
-        assert.equal(res.body.category, null);
+        assert.deepEqual(res.body.data, LAB1_TAUGHT_MODULES);
+        assert.deepEqual(res.body.pagination, { page: 1, limit: 20, total: 10 });
+
+        const page = await request('GET', '/profs/697453889/taught_modules?page=1&limit=2');
+        assert.deepEqual(page.body.data, LAB1_TAUGHT_MODULES.slice(0, 2));
+        assert.equal(page.body.links.next, '/profs/697453889/taught_modules?page=2&limit=2');
       });
 
       it('answers 404 for an unknown prof', async () => {
-        assert.equal((await request('GET', '/profs/000')).status, 404);
+        const res = await request('GET', '/profs/000');
+        assert.equal(res.status, 404);
+        assert.deepEqual(res.body, { error: 'prof not found' });
+        assert.equal((await request('GET', '/profs/000/taught_modules')).status, 404);
       });
     });
 
@@ -308,39 +379,51 @@ for (const [serverName, createApp] of Object.entries(servers)) {
       it('lists the modules', async () => {
         const res = await request('GET', '/modules');
         assert.equal(res.status, 200);
-        assert.equal(res.body.total, 14);
-        assert.equal(res.body.modules.length, 14);
+        assert.deepEqual(res.body.pagination, { page: 1, limit: 20, total: 14 });
+        assert.equal(res.body.data.length, 14);
+        assert.deepEqual(res.body.data[0], { name: 'OOP', _links: { self: { href: '/modules/oop' } } });
       });
 
-      it('returns one module with links to its students and profs', async () => {
-        const res = await request('GET', '/modules/OOP');
+      it('answers like the lab 1 server for one module', async () => {
+        const res = await request('GET', '/modules/oop');
         assert.equal(res.status, 200);
-        assert.equal(res.body.label, 'Object-Oriented Programming');
-        assert.equal(res.body.evaluations.length, 3);
-        assert.deepEqual(res.body._links, {
-          self: { href: '/modules/OOP' },
-          students: { href: '/modules/OOP/students' },
-          profs: { href: '/modules/OOP/profs' },
+        assert.deepEqual(res.body, LAB1_MODULE);
+      });
+
+      it('identifies a module by its code in lower case, like the lab 1 server', async () => {
+        assert.equal((await request('GET', '/modules/oop/')).status, 200);
+        assert.equal((await request('GET', '/modules/OOP')).status, 404);
+      });
+
+      it('lists the students and the teachers of a module', async () => {
+        const students = await request('GET', '/modules/oop/enrolled_students?limit=100');
+        assert.equal(students.status, 200);
+        assert.equal(students.body.pagination.total, 52);
+        assert.deepEqual(students.body.data[0], { ine: '555094194B', href: '/students/555094194B/' });
+
+        const teachers = await request('GET', '/modules/oop/teachers');
+        assert.equal(teachers.status, 200);
+        assert.deepEqual(teachers.body.data, LAB1_OOP_TEACHERS);
+
+        const empty = await request('GET', '/modules/fullstack/enrolled_students');
+        assert.equal(empty.body.pagination.total, 0);
+      });
+
+      it('gives the links of a relation to the relation itself', async () => {
+        const res = await request('GET', '/modules/oop/enrolled_students?page=2&limit=50');
+        assert.equal(res.body.data.length, 2);
+        assert.deepEqual(res.body.links, {
+          self: '/modules/oop/enrolled_students?page=2&limit=50',
+          previous: '/modules/oop/enrolled_students?page=1&limit=50',
         });
       });
 
-      it('lists the students and the profs of a module', async () => {
-        const students = await request('GET', '/modules/OOP/students?limit=100');
-        assert.equal(students.status, 200);
-        assert.equal(students.body.total, 52);
-        assert.equal(students.body.students[0].ine, '555094194B');
-
-        const profs = await request('GET', '/modules/OOP/profs');
-        assert.equal(profs.status, 200);
-        assert.equal(profs.body.total, 11);
-
-        const empty = await request('GET', '/modules/fullstack/students');
-        assert.equal(empty.body.total, 0);
-      });
-
       it('answers 404 for an unknown module', async () => {
-        assert.equal((await request('GET', '/modules/NOPE')).status, 404);
-        assert.equal((await request('GET', '/modules/NOPE/students')).status, 404);
+        const res = await request('GET', '/modules/nope');
+        assert.equal(res.status, 404);
+        assert.deepEqual(res.body, { error: 'module not found' });
+        assert.equal((await request('GET', '/modules/nope/enrolled_students')).status, 404);
+        assert.equal((await request('GET', '/modules/nope/teachers')).status, 404);
       });
     });
 

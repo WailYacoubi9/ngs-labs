@@ -28,6 +28,7 @@ export function findProf(number) {
   return getData().profs.find((prof) => prof.number === number);
 }
 
-export function findModule(code) {
-  return getData().modules.find((mod) => mod.code_module === code);
+// A module is identified by its code in lower case, like on the lab 1 server: findModule('oop')
+export function findModule(id) {
+  return getData().modules.find((mod) => mod.code_module.toLowerCase() === id);
 }

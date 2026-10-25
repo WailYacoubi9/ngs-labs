@@ -6,7 +6,7 @@ export function toRegExp(path) {
   return new RegExp('^' + pattern + '/?$');
 }
 
-// Names of the parameters of a route: /modules/:code/students -> ['code']
+// Names of the parameters of a route: /modules/:code/teachers -> ['code']
 export function paramNames(path) {
   const names = path.match(/:[a-zA-Z0-9_]+/g) ?? [];
   return names.map((name) => name.slice(1));

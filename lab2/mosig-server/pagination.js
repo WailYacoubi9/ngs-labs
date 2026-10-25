@@ -22,24 +22,23 @@ export function readPagination(query) {
   return { page, limit };
 }
 
-// One page of a collection, with links to the previous and next pages
-export function buildPage(items, { page, limit }, basePath, key) {
+// One page of a collection, in the format of the lab 1 server:
+// { data, pagination: { page, limit, total }, links: { self, next, previous } }
+export function buildPage(items, { page, limit }, basePath) {
   const start = (page - 1) * limit;
-  const link = (number) => ({ href: `${basePath}?page=${number}&limit=${limit}` });
+  const link = (number) => `${basePath}?page=${number}&limit=${limit}`;
 
   const links = { self: link(page) };
-  if (page > 1) {
-    links.prev = link(page - 1);
-  }
   if (start + limit < items.length) {
     links.next = link(page + 1);
   }
+  if (page > 1) {
+    links.previous = link(page - 1);
+  }
 
   return {
-    total: items.length,
-    page,
-    limit,
-    [key]: items.slice(start, start + limit),
-    _links: links,
+    data: items.slice(start, start + limit),
+    pagination: { page, limit, total: items.length },
+    links,
   };
 }

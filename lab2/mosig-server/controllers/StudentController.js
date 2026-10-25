@@ -1,5 +1,5 @@
 import { getData, findStudent } from '../repository.js';
-import { studentSummary, studentDetails } from '../representations.js';
+import { studentSummary, studentDetails, moduleReference } from '../representations.js';
 import { readPagination, buildPage } from '../pagination.js';
 
 const INE_PATTERN = /^[a-zA-Z0-9-]+$/;
@@ -7,8 +7,8 @@ const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 // _links is accepted (and ignored) so a client can send back a representation it received
 const ACCEPTED_FIELDS = ['ine', 'firstName', 'lastName', 'email', 'birthDate', '_links'];
 
-function notFound(res, ine) {
-  return res.status(404).json({ error: `Student ${ine} not found` });
+function notFound(res) {
+  return res.status(404).json({ error: 'student not found' });
 }
 
 function badRequest(res, error) {
@@ -66,16 +66,30 @@ export function listStudents(req, res) {
     return badRequest(res, pagination.error);
   }
   const students = getData().students.map(studentSummary);
-  res.status(200).json(buildPage(students, pagination, '/students', 'students'));
+  res.status(200).json(buildPage(students, pagination, '/students'));
 }
 
 // GET /students/:ine
 export function getStudent(req, res) {
   const student = findStudent(req.params.ine);
   if (!student) {
-    return notFound(res, req.params.ine);
+    return notFound(res);
   }
   res.status(200).json(studentDetails(student));
+}
+
+// GET /students/:ine/followed_modules: the modules followed by the student
+export function listFollowedModules(req, res) {
+  const student = findStudent(req.params.ine);
+  if (!student) {
+    return notFound(res);
+  }
+  const pagination = readPagination(req.query);
+  if (pagination.error) {
+    return badRequest(res, pagination.error);
+  }
+  const modules = student.followed_modules.map(moduleReference);
+  res.status(200).json(buildPage(modules, pagination, `/students/${student.ine}/followed_modules`));
 }
 
 // POST /students
@@ -110,7 +124,7 @@ export function createStudent(req, res) {
 export function replaceStudent(req, res) {
   const student = findStudent(req.params.ine);
   if (!student) {
-    return notFound(res, req.params.ine);
+    return notFound(res);
   }
   const body = req.body;
   const error = validate(body, { requireNames: true, ine: student.ine });
@@ -129,7 +143,7 @@ export function replaceStudent(req, res) {
 export function updateStudent(req, res) {
   const student = findStudent(req.params.ine);
   if (!student) {
-    return notFound(res, req.params.ine);
+    return notFound(res);
   }
   const body = req.body;
   const error = validate(body, { requireNames: false, ine: student.ine });
@@ -149,7 +163,7 @@ export function deleteStudent(req, res) {
   const data = getData();
   const index = data.students.findIndex((student) => student.ine === req.params.ine);
   if (index === -1) {
-    return notFound(res, req.params.ine);
+    return notFound(res);
   }
 
   data.students.splice(index, 1);

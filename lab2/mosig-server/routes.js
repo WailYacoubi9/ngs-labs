@@ -26,12 +26,14 @@ export default function registerRoutes(app) {
   app.put('/students/:ine', safe(StudentController.replaceStudent));
   app.patch('/students/:ine', safe(StudentController.updateStudent));
   app.delete('/students/:ine', safe(StudentController.deleteStudent));
+  app.get('/students/:ine/followed_modules', safe(StudentController.listFollowedModules));
 
   app.get('/profs', safe(ProfController.listProfs));
   app.get('/profs/:number', safe(ProfController.getProf));
+  app.get('/profs/:number/taught_modules', safe(ProfController.listTaughtModules));
 
   app.get('/modules', safe(ModuleController.listModules));
   app.get('/modules/:code', safe(ModuleController.getModule));
-  app.get('/modules/:code/students', safe(ModuleController.listModuleStudents));
-  app.get('/modules/:code/profs', safe(ModuleController.listModuleProfs));
+  app.get('/modules/:code/enrolled_students', safe(ModuleController.listEnrolledStudents));
+  app.get('/modules/:code/teachers', safe(ModuleController.listTeachers));
 }

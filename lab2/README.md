@@ -34,18 +34,20 @@ cd ../mosig-server && npm link tiny-rest
 | Method | Path | Answers |
 |---|---|---|
 | GET | `/` | 200: name of the master, links to students, profs and modules, and the heads of the master |
-| GET | `/students?page=1&limit=20` | 200: one page of short representations (`ine`, `name`); 400 if page or limit is invalid |
+| GET | `/students?page=1&limit=20` | 200: one page of students (`name`, `ine`); 400 if page or limit is invalid |
 | POST | `/students` | 201 with a `Location` header; 400 if the body is invalid; 409 if the ine already exists |
 | GET | `/students/:ine` | 200: full student; 404 |
 | PUT | `/students/:ine` | 204: the whole student is replaced; 400; 404 |
 | PATCH | `/students/:ine` | 204: only the fields sent are changed; 400; 404 |
 | DELETE | `/students/:ine` | 204: the student is also removed from its modules; 404 |
+| GET | `/students/:ine/followed_modules` | 200: modules followed by the student; 400; 404 |
 | GET | `/profs?page=1&limit=20` | 200; 400 |
 | GET | `/profs/:number` | 200; 404 |
+| GET | `/profs/:number/taught_modules` | 200: modules taught by the prof; 400; 404 |
 | GET | `/modules?page=1&limit=20` | 200; 400 |
-| GET | `/modules/:code` | 200; 404 |
-| GET | `/modules/:code/students?page=1&limit=20` | 200: students registered in the module; 404 |
-| GET | `/modules/:code/profs?page=1&limit=20` | 200: profs of the module; 404 |
+| GET | `/modules/:code` | 200; 404. The code is in lower case: `/modules/oop` |
+| GET | `/modules/:code/enrolled_students` | 200: students registered in the module; 400; 404 |
+| GET | `/modules/:code/teachers` | 200: profs who teach the module; 400; 404 |
 
 Any other route gets a 404, a body that isn't valid JSON gets a 400, and a missing `data.json` gets a 500. Paths work with or without a trailing slash (`/students/` = `/students`).
 
@@ -59,13 +61,22 @@ curl -i -X POST http://localhost:3000/students \
 
 ## Design choices
 
-- Clients never get the stored objects as they are. The server builds representations that use the field names of the lab 1 specification (`firstName`, `lastName`, `birthDate`). Collections return short representations (`ine` and `name` for students), and a single resource returns its full representation.
-- Every representation carries `_links` (HATEOAS): `self`, the modules of a student or prof, the students and profs of a module, and `prev`/`next` on paginated collections.
-- Collections are paginated with `page` (default 1) and `limit` (default 20, maximum 100), as in the specification.
+- Clients never get the stored objects as they are. The server builds the same representations as the lab 1 server (https://ppp.alwaysdata.net), with the field names of the lab 1 specification (`firstName`, `lastName`, `birthDate`). A collection returns short representations (the name as `Lauryn L.` and the id), and a single resource returns its full representation.
+- The answers were compared with the lab 1 server on 25 Oct 2026. The tests check the student 657395330O, the prof 697453889, the module oop, its teachers and the second page of students against the answers recorded from that server.
+- Collections have the format of the lab 1 server: `{ "data": [...], "pagination": { "page", "limit", "total" }, "links": { "self", "next", "previous" } }`.
+- A single resource links to its relations, as on the lab 1 server: `followed_modules` for a student, `taught_modules` for a prof, `enrolled_students` and `teachers` for a module. Each relation is a paginated collection of its own.
+- In URLs, a module is identified by its code in lower case (`/modules/oop`), as on the lab 1 server, so `/modules/OOP` answers 404.
+- The lab 1 server doesn't show the `office` and `category` of profs, so this server doesn't either.
 - PUT replaces all the attributes of a student, so optional fields left out (`email`, `birthDate`) are emptied. PATCH changes only the fields it receives. The ine identifies the student and can't be changed.
 - Changes made with POST, PUT, PATCH and DELETE are kept in memory and `data.json` is never written, so restarting the server resets the data.
 - `data.json` is read with `fs.readFileSync` from the folder of the code, not from the folder where `node` is launched.
-- In `data.json`, prof 346070450 has a field `cstudentsategory` instead of `category`, so the API returns `category: null` for this prof.
+
+## Differences with the lab 1 server, on purpose
+
+- Pagination follows the lab 1 specification: `limit` is 20 by default and at most 100, and an invalid `page` or `limit` gets a 400. The lab 1 server uses 50 by default, accepts any `limit`, silently replaces an invalid `page` by 1, and answers 99 students to `limit=-1`.
+- The `links` of a relation point to the relation itself (`/modules/oop/enrolled_students?page=2&limit=50`). On the lab 1 server they point to the whole collection (`/students?page=2&limit=50`), so following `next` there loads another list.
+- Errors are `{ "error": "student not found" }`, where the lab 1 server writes "fouund".
+- The name of the master comes from `data.json` ("Master 2 MOSIG", as on the lab 1 page). The lab 1 server now answers "IUT2 Dep Info".
 
 ## Structure
 
