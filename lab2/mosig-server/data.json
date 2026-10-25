@@ -1,0 +1,3215 @@
+{
+  "name": "Master 2 MOSIG",
+  "students": [
+    {
+      "lastname": "Lauryn",
+      "firstname": "Lutero",
+      "email": [
+        "lauryn.lutero@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB01"
+      ],
+      "birthdate": "2000-02-04",
+      "ine": "657395330O"
+    },
+    {
+      "lastname": "Lucy",
+      "firstname": "Hollingsworth",
+      "email": [
+        "lucy.hollingsworth@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ARCHI01",
+        "WEB03",
+        "NETWORK",
+        "WEB02"
+      ],
+      "birthdate": "2005-12-29",
+      "ine": "240617031O"
+    },
+    {
+      "lastname": "Jsandye",
+      "firstname": "Rheingold",
+      "email": [
+        "jsandye.rheingold@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ALGO01",
+        "WEB01",
+        "ALGO02",
+        "NETWORK",
+        "WEB03",
+        "WEB02",
+        "ARCHI02",
+        "ARCHI01",
+        "MATH"
+      ],
+      "birthdate": "2004-01-20",
+      "ine": "455337933C"
+    },
+    {
+      "lastname": "Lusa",
+      "firstname": "Belldas",
+      "email": [
+        "lusa.belldas@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "OOP",
+        "WEB01",
+        "WEB02",
+        "ARCHI01",
+        "OOC",
+        "ALGO01",
+        "MATH"
+      ],
+      "birthdate": "2003-08-10",
+      "ine": "555094194B"
+    },
+    {
+      "lastname": "Jennica",
+      "firstname": "Stav",
+      "email": [
+        "jennica.stav@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB01",
+        "MathSup"
+      ],
+      "birthdate": "2000-02-28",
+      "ine": "449898176M"
+    },
+    {
+      "lastname": "Tina",
+      "firstname": "Rodmann",
+      "email": [
+        "tina.rodmann@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [],
+      "birthdate": "2002-08-17",
+      "ine": "191794613S"
+    },
+    {
+      "lastname": "Philis",
+      "firstname": "Hirsch",
+      "email": [
+        "philis.hirsch@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "NETWORK"
+      ],
+      "birthdate": "2005-05-02",
+      "ine": "376561737O"
+    },
+    {
+      "lastname": "Farrah",
+      "firstname": "Jammal",
+      "email": [
+        "farrah.jammal@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB03",
+        "ALGO02",
+        "OOP",
+        "ARCHI01",
+        "MathSup",
+        "WEB01",
+        "ARCHI02"
+      ],
+      "birthdate": "2003-07-07",
+      "ine": "186138761H"
+    },
+    {
+      "lastname": "Viki",
+      "firstname": "Pascia",
+      "email": [
+        "viki.pascia@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB01",
+        "NETWORK"
+      ],
+      "birthdate": "2001-04-19",
+      "ine": "777553315T"
+    },
+    {
+      "lastname": "Ginnie",
+      "firstname": "Burkle",
+      "email": [
+        "ginnie.burkle@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB02",
+        "OOP",
+        "MathSup",
+        "MATH",
+        "ALGO02",
+        "ARCHI01",
+        "PROG",
+        "ALGO01",
+        "WEB01",
+        "OOC",
+        "ARCHI02",
+        "WEB03"
+      ],
+      "birthdate": "2002-03-31",
+      "ine": "687153635I"
+    },
+    {
+      "lastname": "Adelle",
+      "firstname": "Stefa",
+      "email": [
+        "adelle.stefa@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "NETWORK",
+        "WEB02",
+        "ALGO01",
+        "OOP",
+        "OOC",
+        "ALGO02",
+        "ARCHI01"
+      ],
+      "birthdate": "2005-06-17",
+      "ine": "455335402V"
+    },
+    {
+      "lastname": "Lory",
+      "firstname": "Auberbach",
+      "email": [
+        "lory.auberbach@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB02",
+        "ARCHI02",
+        "ARCHI01",
+        "ALGO01",
+        "WEB03",
+        "ALGO02",
+        "OOC"
+      ],
+      "birthdate": "2004-12-03",
+      "ine": "315961217X"
+    },
+    {
+      "lastname": "Nita",
+      "firstname": "Peti",
+      "email": [
+        "nita.peti@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "MATH",
+        "ALGO02",
+        "NETWORK",
+        "ARCHI01",
+        "ARCHI02",
+        "ALGO01",
+        "OOC",
+        "PROG",
+        "WEB01",
+        "WEB03",
+        "MathSup",
+        "OOP",
+        "WEB02"
+      ],
+      "birthdate": "2000-01-22",
+      "ine": "767368803F"
+    },
+    {
+      "lastname": "Cristabel",
+      "firstname": "Lytton",
+      "email": [
+        "cristabel.lytton@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ALGO02",
+        "ALGO01",
+        "MathSup",
+        "ARCHI02",
+        "OOC",
+        "WEB03",
+        "WEB01",
+        "OOP",
+        "PROG",
+        "WEB02",
+        "ARCHI01",
+        "NETWORK",
+        "MATH"
+      ],
+      "birthdate": "2002-10-28",
+      "ine": "240007468Q"
+    },
+    {
+      "lastname": "Hyacinthe",
+      "firstname": "Penelopa",
+      "email": [
+        "hyacinthe.penelopa@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "PROG",
+        "NETWORK",
+        "ALGO02",
+        "ARCHI02",
+        "OOP",
+        "OOC",
+        "WEB02",
+        "ARCHI01"
+      ],
+      "birthdate": "2000-10-26",
+      "ine": "582302889H"
+    },
+    {
+      "lastname": "Codie",
+      "firstname": "Chauncey",
+      "email": [
+        "codie.chauncey@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "PROG",
+        "MathSup",
+        "ALGO01",
+        "WEB02",
+        "WEB01",
+        "OOP",
+        "ALGO02",
+        "MATH",
+        "ARCHI02",
+        "ARCHI01",
+        "NETWORK"
+      ],
+      "birthdate": "2002-03-11",
+      "ine": "102308189G"
+    },
+    {
+      "lastname": "Marinna",
+      "firstname": "Ricki",
+      "email": [
+        "marinna.ricki@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "PROG",
+        "ARCHI02",
+        "MathSup",
+        "ALGO02",
+        "NETWORK",
+        "ARCHI01",
+        "WEB03",
+        "WEB01",
+        "OOC"
+      ],
+      "birthdate": "2003-06-17",
+      "ine": "065564743E"
+    },
+    {
+      "lastname": "Roxane",
+      "firstname": "Alwin",
+      "email": [
+        "roxane.alwin@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "MATH",
+        "OOC"
+      ],
+      "birthdate": "2004-06-16",
+      "ine": "424634338O"
+    },
+    {
+      "lastname": "Christy",
+      "firstname": "Ioab",
+      "email": [
+        "christy.ioab@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ARCHI01"
+      ],
+      "birthdate": "2005-11-28",
+      "ine": "557000760R"
+    },
+    {
+      "lastname": "Christian",
+      "firstname": "Sholley",
+      "email": [
+        "christian.sholley@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ARCHI01",
+        "OOP",
+        "WEB02",
+        "WEB01",
+        "ARCHI02",
+        "MathSup",
+        "OOC",
+        "ALGO02",
+        "ALGO01"
+      ],
+      "birthdate": "2003-02-05",
+      "ine": "876351786I"
+    },
+    {
+      "lastname": "Theodora",
+      "firstname": "Cottle",
+      "email": [
+        "theodora.cottle@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ARCHI01",
+        "ARCHI02",
+        "MATH",
+        "WEB03",
+        "ALGO02",
+        "OOP",
+        "PROG",
+        "NETWORK"
+      ],
+      "birthdate": "2004-01-15",
+      "ine": "773732696W"
+    },
+    {
+      "lastname": "Pollyanna",
+      "firstname": "Hessler",
+      "email": [
+        "pollyanna.hessler@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB03",
+        "ARCHI01",
+        "WEB01"
+      ],
+      "birthdate": "2001-02-24",
+      "ine": "998095913G"
+    },
+    {
+      "lastname": "Leanna",
+      "firstname": "Fredi",
+      "email": [
+        "leanna.fredi@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB02"
+      ],
+      "birthdate": "2002-03-03",
+      "ine": "309561392X"
+    },
+    {
+      "lastname": "Shirlee",
+      "firstname": "Suk",
+      "email": [
+        "shirlee.suk@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "NETWORK",
+        "ALGO01",
+        "MathSup"
+      ],
+      "birthdate": "2002-09-02",
+      "ine": "537323096N"
+    },
+    {
+      "lastname": "Gavrielle",
+      "firstname": "Lilas",
+      "email": [
+        "gavrielle.lilas@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB02",
+        "ARCHI02",
+        "NETWORK",
+        "ALGO01",
+        "WEB03",
+        "MathSup",
+        "OOP",
+        "MATH"
+      ],
+      "birthdate": "2001-12-16",
+      "ine": "053829612T"
+    },
+    {
+      "lastname": "Cacilie",
+      "firstname": "Yorick",
+      "email": [
+        "cacilie.yorick@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ALGO02",
+        "WEB01",
+        "NETWORK",
+        "WEB02",
+        "MathSup",
+        "OOC"
+      ],
+      "birthdate": "2000-08-02",
+      "ine": "372088353S"
+    },
+    {
+      "lastname": "Wileen",
+      "firstname": "Hessler",
+      "email": [
+        "wileen.hessler@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ARCHI02",
+        "WEB01"
+      ],
+      "birthdate": "2004-05-08",
+      "ine": "771433905R"
+    },
+    {
+      "lastname": "Lauryn",
+      "firstname": "Yuille",
+      "email": [
+        "lauryn.yuille@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "MATH",
+        "ALGO02",
+        "OOP",
+        "WEB03",
+        "PROG",
+        "ALGO01",
+        "ARCHI02",
+        "NETWORK",
+        "OOC"
+      ],
+      "birthdate": "2003-11-21",
+      "ine": "227027332N"
+    },
+    {
+      "lastname": "Caritta",
+      "firstname": "Pierette",
+      "email": [
+        "caritta.pierette@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "NETWORK",
+        "ALGO02",
+        "PROG",
+        "ALGO01",
+        "MATH",
+        "ARCHI02",
+        "WEB02",
+        "MathSup",
+        "OOC",
+        "ARCHI01",
+        "WEB01"
+      ],
+      "birthdate": "2000-09-26",
+      "ine": "847562529Z"
+    },
+    {
+      "lastname": "Minda",
+      "firstname": "Nicoline",
+      "email": [
+        "minda.nicoline@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "MATH",
+        "MathSup",
+        "WEB01",
+        "NETWORK",
+        "ALGO01",
+        "ARCHI01",
+        "OOP",
+        "OOC",
+        "ALGO02",
+        "PROG"
+      ],
+      "birthdate": "2001-03-07",
+      "ine": "707088825Q"
+    },
+    {
+      "lastname": "Marline",
+      "firstname": "Timon",
+      "email": [
+        "marline.timon@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "OOP",
+        "ARCHI01",
+        "MATH",
+        "OOC",
+        "WEB03",
+        "NETWORK",
+        "MathSup",
+        "ARCHI02",
+        "ALGO02"
+      ],
+      "birthdate": "2000-07-06",
+      "ine": "894706194Y"
+    },
+    {
+      "lastname": "Ottilie",
+      "firstname": "Socha",
+      "email": [
+        "ottilie.socha@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ALGO01",
+        "MATH",
+        "ARCHI02",
+        "WEB01",
+        "OOC",
+        "WEB03",
+        "ALGO02",
+        "MathSup",
+        "OOP",
+        "NETWORK",
+        "PROG",
+        "WEB02"
+      ],
+      "birthdate": "2004-09-13",
+      "ine": "551304872Y"
+    },
+    {
+      "lastname": "Mathilda",
+      "firstname": "Scammon",
+      "email": [
+        "mathilda.scammon@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "OOC"
+      ],
+      "birthdate": "2000-06-24",
+      "ine": "184858689V"
+    },
+    {
+      "lastname": "Jobi",
+      "firstname": "Moina",
+      "email": [
+        "jobi.moina@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB03",
+        "WEB02",
+        "OOP",
+        "ALGO01"
+      ],
+      "birthdate": "2005-09-06",
+      "ine": "120467439I"
+    },
+    {
+      "lastname": "Shell",
+      "firstname": "Bibi",
+      "email": [
+        "shell.bibi@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ARCHI01",
+        "ALGO01",
+        "PROG",
+        "ALGO02",
+        "OOC",
+        "MathSup",
+        "WEB01",
+        "MATH",
+        "OOP",
+        "NETWORK",
+        "ARCHI02",
+        "WEB02",
+        "WEB03"
+      ],
+      "birthdate": "2001-03-08",
+      "ine": "998395933E"
+    },
+    {
+      "lastname": "Josephine",
+      "firstname": "Revkah",
+      "email": [
+        "josephine.revkah@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "PROG",
+        "MathSup"
+      ],
+      "birthdate": "2000-04-29",
+      "ine": "124700434L"
+    },
+    {
+      "lastname": "Konstance",
+      "firstname": "Rhu",
+      "email": [
+        "konstance.rhu@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ALGO02",
+        "WEB01",
+        "MathSup",
+        "ALGO01",
+        "WEB03",
+        "ARCHI02",
+        "OOP",
+        "MATH",
+        "NETWORK",
+        "OOC"
+      ],
+      "birthdate": "2002-04-10",
+      "ine": "202446906V"
+    },
+    {
+      "lastname": "Addia",
+      "firstname": "Dudley",
+      "email": [
+        "addia.dudley@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB01",
+        "ALGO02",
+        "ARCHI01",
+        "PROG",
+        "OOP",
+        "NETWORK"
+      ],
+      "birthdate": "2003-01-09",
+      "ine": "593255868K"
+    },
+    {
+      "lastname": "Fred",
+      "firstname": "Silvan",
+      "email": [
+        "fred.silvan@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB01",
+        "WEB03",
+        "ALGO01",
+        "NETWORK",
+        "ALGO02",
+        "MATH",
+        "MathSup",
+        "PROG",
+        "ARCHI02",
+        "OOP",
+        "ARCHI01",
+        "OOC"
+      ],
+      "birthdate": "2005-08-15",
+      "ine": "298495944R"
+    },
+    {
+      "lastname": "Demetris",
+      "firstname": "Ivens",
+      "email": [
+        "demetris.ivens@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB02"
+      ],
+      "birthdate": "2003-07-21",
+      "ine": "358913136S"
+    },
+    {
+      "lastname": "Marika",
+      "firstname": "Bobbee",
+      "email": [
+        "marika.bobbee@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ARCHI01",
+        "WEB02",
+        "NETWORK",
+        "ARCHI02",
+        "MathSup",
+        "MATH",
+        "PROG",
+        "OOP",
+        "OOC",
+        "WEB01",
+        "ALGO02"
+      ],
+      "birthdate": "2003-05-21",
+      "ine": "462174434H"
+    },
+    {
+      "lastname": "Fidelia",
+      "firstname": "Glovsky",
+      "email": [
+        "fidelia.glovsky@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB02",
+        "WEB01",
+        "ARCHI02",
+        "ALGO01",
+        "PROG"
+      ],
+      "birthdate": "2002-04-14",
+      "ine": "598623389R"
+    },
+    {
+      "lastname": "Karlee",
+      "firstname": "Celestine",
+      "email": [
+        "karlee.celestine@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ALGO02",
+        "ARCHI01",
+        "ALGO01",
+        "WEB01"
+      ],
+      "birthdate": "2003-02-07",
+      "ine": "809664719T"
+    },
+    {
+      "lastname": "Jacenta",
+      "firstname": "Grobe",
+      "email": [
+        "jacenta.grobe@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "PROG",
+        "OOC",
+        "NETWORK",
+        "ARCHI01",
+        "OOP"
+      ],
+      "birthdate": "2003-07-13",
+      "ine": "186633623X"
+    },
+    {
+      "lastname": "Alejandra",
+      "firstname": "Engdahl",
+      "email": [
+        "alejandra.engdahl@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ALGO01",
+        "MathSup",
+        "NETWORK"
+      ],
+      "birthdate": "2001-08-05",
+      "ine": "647964155P"
+    },
+    {
+      "lastname": "Tersina",
+      "firstname": "Sikorski",
+      "email": [
+        "tersina.sikorski@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [],
+      "birthdate": "2004-02-21",
+      "ine": "076442649R"
+    },
+    {
+      "lastname": "Genevra",
+      "firstname": "Jary",
+      "email": [
+        "genevra.jary@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ALGO01",
+        "ARCHI02",
+        "WEB02",
+        "PROG",
+        "MATH",
+        "ARCHI01",
+        "WEB01",
+        "MathSup",
+        "OOP",
+        "WEB03",
+        "ALGO02",
+        "OOC",
+        "NETWORK"
+      ],
+      "birthdate": "2004-05-22",
+      "ine": "603791378B"
+    },
+    {
+      "lastname": "Alia",
+      "firstname": "Friede",
+      "email": [
+        "alia.friede@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "OOP",
+        "WEB02",
+        "ARCHI02",
+        "OOC",
+        "ALGO02",
+        "WEB01",
+        "PROG"
+      ],
+      "birthdate": "2003-07-23",
+      "ine": "659695203J"
+    },
+    {
+      "lastname": "Ayn",
+      "firstname": "Winthorpe",
+      "email": [
+        "ayn.winthorpe@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ARCHI02"
+      ],
+      "birthdate": "2005-01-24",
+      "ine": "127044627Q"
+    },
+    {
+      "lastname": "Cindelyn",
+      "firstname": "Leler",
+      "email": [
+        "cindelyn.leler@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [],
+      "birthdate": "2003-07-07",
+      "ine": "196405300F"
+    },
+    {
+      "lastname": "Agnese",
+      "firstname": "Atonsah",
+      "email": [
+        "agnese.atonsah@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [],
+      "birthdate": "2001-06-14",
+      "ine": "002591230U"
+    },
+    {
+      "lastname": "Feliza",
+      "firstname": "Bettine",
+      "email": [
+        "feliza.bettine@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB02",
+        "PROG",
+        "OOP",
+        "ARCHI01",
+        "ARCHI02",
+        "WEB03",
+        "MathSup",
+        "ALGO01",
+        "NETWORK",
+        "MATH"
+      ],
+      "birthdate": "2005-11-06",
+      "ine": "383615303K"
+    },
+    {
+      "lastname": "Alie",
+      "firstname": "Bethany",
+      "email": [
+        "alie.bethany@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "MathSup",
+        "WEB01",
+        "ALGO02",
+        "WEB02",
+        "NETWORK",
+        "OOP"
+      ],
+      "birthdate": "2004-04-17",
+      "ine": "104936959P"
+    },
+    {
+      "lastname": "Annecorinne",
+      "firstname": "Brian",
+      "email": [
+        "annecorinne.brian@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB02",
+        "MathSup",
+        "ARCHI02",
+        "ALGO01",
+        "WEB03"
+      ],
+      "birthdate": "2001-01-15",
+      "ine": "382974888W"
+    },
+    {
+      "lastname": "Priscilla",
+      "firstname": "Jarib",
+      "email": [
+        "priscilla.jarib@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB02",
+        "WEB01",
+        "MathSup",
+        "PROG",
+        "ALGO01",
+        "ALGO02",
+        "ARCHI01",
+        "OOP",
+        "ARCHI02",
+        "MATH",
+        "NETWORK"
+      ],
+      "birthdate": "2002-01-14",
+      "ine": "023779818D"
+    },
+    {
+      "lastname": "Raf",
+      "firstname": "Darian",
+      "email": [
+        "raf.darian@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "MathSup",
+        "WEB02",
+        "ARCHI02",
+        "MATH",
+        "WEB03",
+        "PROG",
+        "OOC"
+      ],
+      "birthdate": "2003-12-28",
+      "ine": "373496379F"
+    },
+    {
+      "lastname": "Georgetta",
+      "firstname": "Cleo",
+      "email": [
+        "georgetta.cleo@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB03",
+        "MATH",
+        "ALGO01",
+        "OOC",
+        "ARCHI01",
+        "WEB02",
+        "OOP",
+        "PROG",
+        "WEB01",
+        "ALGO02",
+        "MathSup"
+      ],
+      "birthdate": "2000-10-19",
+      "ine": "374857549G"
+    },
+    {
+      "lastname": "Lulita",
+      "firstname": "Melleta",
+      "email": [
+        "lulita.melleta@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB01",
+        "PROG",
+        "NETWORK",
+        "ARCHI01",
+        "ARCHI02",
+        "OOC"
+      ],
+      "birthdate": "2003-04-18",
+      "ine": "572009609F"
+    },
+    {
+      "lastname": "Leia",
+      "firstname": "Merat",
+      "email": [
+        "leia.merat@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB03",
+        "ARCHI01",
+        "ALGO02",
+        "OOC",
+        "WEB01",
+        "ARCHI02",
+        "MATH",
+        "MathSup",
+        "NETWORK"
+      ],
+      "birthdate": "2003-05-19",
+      "ine": "313292571B"
+    },
+    {
+      "lastname": "Abbie",
+      "firstname": "Ade",
+      "email": [
+        "abbie.ade@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "NETWORK",
+        "ALGO01",
+        "OOP",
+        "WEB01",
+        "MathSup",
+        "OOC",
+        "MATH",
+        "PROG",
+        "ALGO02",
+        "WEB02",
+        "ARCHI01",
+        "ARCHI02",
+        "WEB03"
+      ],
+      "birthdate": "2000-02-26",
+      "ine": "257928250U"
+    },
+    {
+      "lastname": "Morganica",
+      "firstname": "Vharat",
+      "email": [
+        "morganica.vharat@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "NETWORK",
+        "ALGO01",
+        "MathSup",
+        "WEB01",
+        "MATH",
+        "ARCHI02",
+        "OOP",
+        "WEB03"
+      ],
+      "birthdate": "2005-08-29",
+      "ine": "821173080O"
+    },
+    {
+      "lastname": "Gwyneth",
+      "firstname": "Hortensia",
+      "email": [
+        "gwyneth.hortensia@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [],
+      "birthdate": "2000-08-05",
+      "ine": "925658439X"
+    },
+    {
+      "lastname": "Bee",
+      "firstname": "Lytton",
+      "email": [
+        "bee.lytton@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "OOC",
+        "ARCHI02",
+        "WEB01",
+        "ARCHI01",
+        "ALGO01",
+        "MathSup",
+        "ALGO02",
+        "WEB03",
+        "PROG",
+        "OOP",
+        "WEB02",
+        "MATH",
+        "NETWORK"
+      ],
+      "birthdate": "2003-08-24",
+      "ine": "377650313Y"
+    },
+    {
+      "lastname": "Oona",
+      "firstname": "Winnick",
+      "email": [
+        "oona.winnick@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "PROG",
+        "NETWORK",
+        "MATH",
+        "WEB03",
+        "ALGO01",
+        "ARCHI02",
+        "ARCHI01",
+        "OOP",
+        "WEB01",
+        "MathSup",
+        "WEB02"
+      ],
+      "birthdate": "2001-09-08",
+      "ine": "158189725V"
+    },
+    {
+      "lastname": "Constance",
+      "firstname": "Brieta",
+      "email": [
+        "constance.brieta@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "MATH",
+        "WEB03",
+        "ARCHI01",
+        "MathSup",
+        "ALGO02",
+        "WEB02"
+      ],
+      "birthdate": "2004-09-19",
+      "ine": "177913237L"
+    },
+    {
+      "lastname": "Aili",
+      "firstname": "Dominy",
+      "email": [
+        "aili.dominy@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [],
+      "birthdate": "2001-12-03",
+      "ine": "933082798X"
+    },
+    {
+      "lastname": "Angelique",
+      "firstname": "Trinetta",
+      "email": [
+        "angelique.trinetta@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "PROG"
+      ],
+      "birthdate": "2000-01-30",
+      "ine": "660680110J"
+    },
+    {
+      "lastname": "Karena",
+      "firstname": "Vanni",
+      "email": [
+        "karena.vanni@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "OOC",
+        "PROG"
+      ],
+      "birthdate": "2004-10-12",
+      "ine": "657087664M"
+    },
+    {
+      "lastname": "Pierette",
+      "firstname": "Solitta",
+      "email": [
+        "pierette.solitta@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB03",
+        "NETWORK",
+        "WEB02",
+        "OOP",
+        "ALGO02",
+        "ALGO01",
+        "PROG",
+        "WEB01",
+        "MathSup"
+      ],
+      "birthdate": "2003-12-22",
+      "ine": "084911100J"
+    },
+    {
+      "lastname": "Carlie",
+      "firstname": "Hourigan",
+      "email": [
+        "carlie.hourigan@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB01",
+        "ALGO02",
+        "MathSup",
+        "OOC",
+        "PROG",
+        "ARCHI01",
+        "NETWORK"
+      ],
+      "birthdate": "2002-07-02",
+      "ine": "089599263W"
+    },
+    {
+      "lastname": "Winifred",
+      "firstname": "Kronfeld",
+      "email": [
+        "winifred.kronfeld@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB01",
+        "NETWORK",
+        "MathSup",
+        "ALGO01",
+        "ARCHI02",
+        "ALGO02",
+        "OOC",
+        "MATH",
+        "OOP",
+        "PROG",
+        "ARCHI01",
+        "WEB03"
+      ],
+      "birthdate": "2001-04-26",
+      "ine": "749008351V"
+    },
+    {
+      "lastname": "Jorry",
+      "firstname": "Vastah",
+      "email": [
+        "jorry.vastah@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB01",
+        "MATH",
+        "ALGO02",
+        "OOC",
+        "OOP",
+        "WEB02",
+        "WEB03"
+      ],
+      "birthdate": "2003-11-09",
+      "ine": "281128819D"
+    },
+    {
+      "lastname": "Ardys",
+      "firstname": "Haymes",
+      "email": [
+        "ardys.haymes@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB03",
+        "PROG",
+        "ARCHI01",
+        "ALGO01",
+        "MathSup",
+        "ALGO02",
+        "OOP",
+        "MATH"
+      ],
+      "birthdate": "2001-09-11",
+      "ine": "244836341A"
+    },
+    {
+      "lastname": "Chere",
+      "firstname": "Darrell",
+      "email": [
+        "chere.darrell@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "PROG",
+        "ARCHI02",
+        "ALGO02",
+        "OOP",
+        "WEB01",
+        "NETWORK",
+        "MathSup",
+        "OOC",
+        "WEB02"
+      ],
+      "birthdate": "2000-08-09",
+      "ine": "327811923R"
+    },
+    {
+      "lastname": "Kristan",
+      "firstname": "Yam",
+      "email": [
+        "kristan.yam@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ALGO01"
+      ],
+      "birthdate": "2000-11-22",
+      "ine": "092778481T"
+    },
+    {
+      "lastname": "Romona",
+      "firstname": "Emmy",
+      "email": [
+        "romona.emmy@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ARCHI02",
+        "ALGO01",
+        "WEB01",
+        "WEB03",
+        "ALGO02",
+        "OOP"
+      ],
+      "birthdate": "2003-11-07",
+      "ine": "979529609U"
+    },
+    {
+      "lastname": "Brana",
+      "firstname": "Oneida",
+      "email": [
+        "brana.oneida@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB01",
+        "WEB03",
+        "ARCHI01",
+        "MATH",
+        "ALGO02",
+        "MathSup",
+        "ARCHI02",
+        "WEB02",
+        "ALGO01",
+        "NETWORK",
+        "OOP",
+        "PROG",
+        "OOC"
+      ],
+      "birthdate": "2001-10-18",
+      "ine": "811568751A"
+    },
+    {
+      "lastname": "Kathy",
+      "firstname": "Screens",
+      "email": [
+        "kathy.screens@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "OOP",
+        "NETWORK",
+        "ARCHI01"
+      ],
+      "birthdate": "2000-11-20",
+      "ine": "900321357D"
+    },
+    {
+      "lastname": "Evita",
+      "firstname": "Velick",
+      "email": [
+        "evita.velick@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB01",
+        "WEB03",
+        "NETWORK",
+        "MATH"
+      ],
+      "birthdate": "2004-11-28",
+      "ine": "134783154M"
+    },
+    {
+      "lastname": "Lila",
+      "firstname": "Bury",
+      "email": [
+        "lila.bury@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB01",
+        "OOP",
+        "ALGO01",
+        "ALGO02",
+        "MATH",
+        "ARCHI02",
+        "MathSup",
+        "NETWORK"
+      ],
+      "birthdate": "2005-09-08",
+      "ine": "840524570C"
+    },
+    {
+      "lastname": "Zaria",
+      "firstname": "Erminia",
+      "email": [
+        "zaria.erminia@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ARCHI02",
+        "MathSup",
+        "ALGO01",
+        "PROG"
+      ],
+      "birthdate": "2004-03-17",
+      "ine": "046533043D"
+    },
+    {
+      "lastname": "Wanda",
+      "firstname": "Gualtiero",
+      "email": [
+        "wanda.gualtiero@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "MathSup",
+        "PROG",
+        "WEB03",
+        "OOP",
+        "ARCHI01",
+        "MATH"
+      ],
+      "birthdate": "2003-07-27",
+      "ine": "980040169A"
+    },
+    {
+      "lastname": "Beverley",
+      "firstname": "Monaco",
+      "email": [
+        "beverley.monaco@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ALGO01"
+      ],
+      "birthdate": "2000-12-03",
+      "ine": "196930581U"
+    },
+    {
+      "lastname": "Gui",
+      "firstname": "Faro",
+      "email": [
+        "gui.faro@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "NETWORK",
+        "MATH",
+        "ALGO01",
+        "ARCHI01",
+        "MathSup",
+        "OOC"
+      ],
+      "birthdate": "2003-07-15",
+      "ine": "843075152J"
+    },
+    {
+      "lastname": "Aigneis",
+      "firstname": "Deny",
+      "email": [
+        "aigneis.deny@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ARCHI01",
+        "WEB01",
+        "WEB02",
+        "WEB03",
+        "MathSup",
+        "MATH"
+      ],
+      "birthdate": "2005-12-31",
+      "ine": "033486494C"
+    },
+    {
+      "lastname": "Britni",
+      "firstname": "Jaylene",
+      "email": [
+        "britni.jaylene@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "OOP",
+        "ARCHI01",
+        "NETWORK",
+        "OOC",
+        "WEB02"
+      ],
+      "birthdate": "2001-11-29",
+      "ine": "311648187E"
+    },
+    {
+      "lastname": "Evita",
+      "firstname": "Tamar",
+      "email": [
+        "evita.tamar@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "NETWORK",
+        "MATH",
+        "PROG",
+        "ALGO02",
+        "ALGO01",
+        "OOC",
+        "OOP",
+        "WEB03",
+        "ARCHI01",
+        "WEB01",
+        "ARCHI02",
+        "MathSup",
+        "WEB02"
+      ],
+      "birthdate": "2002-03-20",
+      "ine": "396401189W"
+    },
+    {
+      "lastname": "Nita",
+      "firstname": "Brackely",
+      "email": [
+        "nita.brackely@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB03",
+        "MathSup",
+        "OOC",
+        "ALGO01",
+        "ALGO02",
+        "WEB01",
+        "NETWORK",
+        "OOP",
+        "WEB02"
+      ],
+      "birthdate": "2004-06-15",
+      "ine": "310185458L"
+    },
+    {
+      "lastname": "Correy",
+      "firstname": "Felizio",
+      "email": [
+        "correy.felizio@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB03",
+        "NETWORK",
+        "WEB01"
+      ],
+      "birthdate": "2004-02-14",
+      "ine": "141641524Q"
+    },
+    {
+      "lastname": "Meriel",
+      "firstname": "Radu",
+      "email": [
+        "meriel.radu@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "OOP",
+        "ARCHI01",
+        "WEB03",
+        "OOC",
+        "WEB01",
+        "MathSup",
+        "ARCHI02",
+        "MATH",
+        "PROG"
+      ],
+      "birthdate": "2002-04-01",
+      "ine": "576377250E"
+    },
+    {
+      "lastname": "Felice",
+      "firstname": "Bonilla",
+      "email": [
+        "felice.bonilla@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB02",
+        "ARCHI02",
+        "PROG",
+        "MathSup",
+        "WEB03",
+        "WEB01",
+        "NETWORK",
+        "OOC",
+        "ALGO02",
+        "OOP"
+      ],
+      "birthdate": "2002-07-26",
+      "ine": "399644946S"
+    },
+    {
+      "lastname": "Gale",
+      "firstname": "Mullane",
+      "email": [
+        "gale.mullane@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "MATH",
+        "OOC",
+        "MathSup",
+        "WEB03",
+        "NETWORK",
+        "PROG",
+        "OOP",
+        "ALGO02"
+      ],
+      "birthdate": "2001-06-24",
+      "ine": "927480596C"
+    },
+    {
+      "lastname": "Cyndie",
+      "firstname": "Klotz",
+      "email": [
+        "cyndie.klotz@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB03",
+        "OOC",
+        "WEB01",
+        "ARCHI01"
+      ],
+      "birthdate": "2001-08-25",
+      "ine": "635300583R"
+    },
+    {
+      "lastname": "Dari",
+      "firstname": "Ariella",
+      "email": [
+        "dari.ariella@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ARCHI02",
+        "ARCHI01",
+        "WEB01",
+        "PROG",
+        "OOC",
+        "ALGO02",
+        "OOP",
+        "MATH",
+        "NETWORK",
+        "WEB02"
+      ],
+      "birthdate": "2002-08-21",
+      "ine": "743622605N"
+    },
+    {
+      "lastname": "Nyssa",
+      "firstname": "Amand",
+      "email": [
+        "nyssa.amand@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ALGO02"
+      ],
+      "birthdate": "2000-08-07",
+      "ine": "146137269C"
+    },
+    {
+      "lastname": "Elise",
+      "firstname": "Nea",
+      "email": [
+        "elise.nea@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "MATH",
+        "MathSup",
+        "WEB01",
+        "OOC",
+        "ALGO02",
+        "NETWORK",
+        "ARCHI02",
+        "WEB03",
+        "ARCHI01",
+        "ALGO01",
+        "WEB02"
+      ],
+      "birthdate": "2004-05-11",
+      "ine": "918312269K"
+    },
+    {
+      "lastname": "Lynnea",
+      "firstname": "Eachern",
+      "email": [
+        "lynnea.eachern@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "WEB03",
+        "ARCHI02",
+        "OOP",
+        "MathSup",
+        "ALGO02",
+        "ARCHI01",
+        "OOC",
+        "ALGO01",
+        "NETWORK",
+        "PROG",
+        "MATH",
+        "WEB01",
+        "WEB02"
+      ],
+      "birthdate": "2005-01-25",
+      "ine": "086661922T"
+    },
+    {
+      "lastname": "Molli",
+      "firstname": "Tybald",
+      "email": [
+        "molli.tybald@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "NETWORK",
+        "ALGO02",
+        "WEB01",
+        "ARCHI02",
+        "OOC",
+        "OOP",
+        "WEB03"
+      ],
+      "birthdate": "2004-06-12",
+      "ine": "845753204F"
+    },
+    {
+      "lastname": "Zondra",
+      "firstname": "Hewitt",
+      "email": [
+        "zondra.hewitt@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "ARCHI01"
+      ],
+      "birthdate": "2002-11-30",
+      "ine": "127684138X"
+    },
+    {
+      "lastname": "Shannah",
+      "firstname": "Bergman",
+      "email": [
+        "shannah.bergman@etu.univ-grenoble-alpes.fr"
+      ],
+      "followed_modules": [
+        "NETWORK",
+        "OOP",
+        "ALGO01",
+        "WEB01",
+        "MATH",
+        "OOC",
+        "ARCHI01",
+        "ARCHI02",
+        "WEB02",
+        "MathSup",
+        "WEB03",
+        "ALGO02"
+      ],
+      "birthdate": "2002-03-21",
+      "ine": "154954583F"
+    }
+  ],
+  "profs": [
+    {
+      "lastname": "Sonni",
+      "firstname": "Magnolia",
+      "email": [
+        "sonni.magnolia@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "WEB03",
+        "ARCHI02",
+        "WEB01",
+        "ARCHI01",
+        "OOP",
+        "ALGO01",
+        "ALGO02",
+        "MathSup",
+        "OOC",
+        "WEB02"
+      ],
+      "birthdate": "1992-01-31",
+      "number": "697453889",
+      "office": "DG-105",
+      "category": "enseignant chercheur"
+    },
+    {
+      "lastname": "Veda",
+      "firstname": "Esmaria",
+      "email": [
+        "veda.esmaria@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "MathSup",
+        "OOC",
+        "ARCHI02",
+        "MATH",
+        "WEB01"
+      ],
+      "birthdate": "1963-09-16",
+      "number": "054211556",
+      "office": "DG-043",
+      "category": "prof"
+    },
+    {
+      "lastname": "Ronna",
+      "firstname": "Monk",
+      "email": [
+        "ronna.monk@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "ARCHI01",
+        "OOC",
+        "WEB01",
+        "ARCHI02",
+        "NETWORK",
+        "PROG",
+        "WEB03",
+        "MathSup",
+        "ALGO02",
+        "WEB02",
+        "MATH"
+      ],
+      "birthdate": "1984-08-21",
+      "number": "518594213",
+      "office": "DG-050",
+      "category": "prof"
+    },
+    {
+      "lastname": "Annice",
+      "firstname": "Tyson",
+      "email": [
+        "annice.tyson@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "MathSup"
+      ],
+      "birthdate": "1979-06-22",
+      "number": "547367905",
+      "office": "DG-227",
+      "category": "enseignant chercheur"
+    },
+    {
+      "lastname": "Dulcinea",
+      "firstname": "Emanuel",
+      "email": [
+        "dulcinea.emanuel@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "OOP",
+        "NETWORK",
+        "WEB02",
+        "ARCHI02",
+        "MathSup"
+      ],
+      "birthdate": "1978-01-27",
+      "number": "056891098",
+      "office": "DG-044",
+      "category": "prag"
+    },
+    {
+      "lastname": "Millie",
+      "firstname": "Douglass",
+      "email": [
+        "millie.douglass@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "OOP",
+        "WEB02",
+        "OOC",
+        "MathSup",
+        "ARCHI02",
+        "ALGO01"
+      ],
+      "birthdate": "1968-09-20",
+      "number": "402255813",
+      "office": "DG-303",
+      "category": "prof"
+    },
+    {
+      "lastname": "Willetta",
+      "firstname": "Blase",
+      "email": [
+        "willetta.blase@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "WEB02",
+        "MathSup",
+        "MATH",
+        "OOC"
+      ],
+      "birthdate": "1963-06-04",
+      "number": "395452521",
+      "office": "DG-192",
+      "category": "enseignant chercheur"
+    },
+    {
+      "lastname": "Marsiella",
+      "firstname": "Nedrud",
+      "email": [
+        "marsiella.nedrud@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "OOP",
+        "OOC",
+        "MathSup",
+        "MATH",
+        "ARCHI02",
+        "WEB02",
+        "NETWORK",
+        "ALGO01",
+        "WEB03",
+        "ALGO02",
+        "WEB01"
+      ],
+      "birthdate": "1974-05-19",
+      "number": "251962930",
+      "office": "DG-127",
+      "category": "prag"
+    },
+    {
+      "lastname": "Elie",
+      "firstname": "Dash",
+      "email": [
+        "elie.dash@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "MATH",
+        "NETWORK",
+        "OOC",
+        "WEB03",
+        "ALGO01"
+      ],
+      "birthdate": "1970-10-28",
+      "number": "107378046",
+      "office": "DG-170",
+      "category": "prof"
+    },
+    {
+      "lastname": "Asia",
+      "firstname": "Jagir",
+      "email": [
+        "asia.jagir@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "OOP",
+        "MATH",
+        "WEB02"
+      ],
+      "birthdate": "1986-07-20",
+      "number": "867478389",
+      "office": "DG-289",
+      "category": "enseignant chercheur"
+    },
+    {
+      "lastname": "Kirbee",
+      "firstname": "Wandie",
+      "email": [
+        "kirbee.wandie@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "ALGO02",
+        "ALGO01",
+        "WEB02",
+        "NETWORK",
+        "MathSup",
+        "ARCHI01",
+        "OOC",
+        "WEB03",
+        "OOP",
+        "MATH"
+      ],
+      "birthdate": "1980-01-19",
+      "number": "401417699",
+      "office": "DG-157",
+      "category": "prof"
+    },
+    {
+      "lastname": "Miquela",
+      "firstname": "Tyson",
+      "email": [
+        "miquela.tyson@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [],
+      "birthdate": "1980-09-07",
+      "number": "884606693",
+      "office": "DG-380",
+      "category": "enseignant chercheur"
+    },
+    {
+      "lastname": "Wendi",
+      "firstname": "Torray",
+      "email": [
+        "wendi.torray@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "ARCHI01",
+        "OOP",
+        "ARCHI02",
+        "WEB01",
+        "OOC",
+        "PROG",
+        "MathSup",
+        "ALGO01",
+        "NETWORK",
+        "MATH"
+      ],
+      "birthdate": "1977-08-25",
+      "number": "318985765",
+      "office": "DG-143",
+      "category": "enseignant chercheur"
+    },
+    {
+      "lastname": "Babita",
+      "firstname": "Salchunas",
+      "email": [
+        "babita.salchunas@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "WEB03",
+        "MATH",
+        "ARCHI01",
+        "ALGO01",
+        "OOC"
+      ],
+      "birthdate": "1983-06-06",
+      "number": "574025206",
+      "office": "DG-084",
+      "category": "prof"
+    },
+    {
+      "lastname": "Jeanna",
+      "firstname": "Kare",
+      "email": [
+        "jeanna.kare@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "OOP",
+        "WEB03",
+        "MATH",
+        "OOC"
+      ],
+      "birthdate": "1979-03-20",
+      "number": "203780717",
+      "office": "DG-261",
+      "category": "prag"
+    },
+    {
+      "lastname": "Wendi",
+      "firstname": "Candy",
+      "email": [
+        "wendi.candy@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "PROG",
+        "WEB02",
+        "WEB03"
+      ],
+      "birthdate": "1968-02-16",
+      "number": "548992314",
+      "office": "DG-364",
+      "category": "prag"
+    },
+    {
+      "lastname": "Lorne",
+      "firstname": "Amadas",
+      "email": [
+        "lorne.amadas@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "OOP",
+        "NETWORK",
+        "ALGO02",
+        "MathSup",
+        "WEB01",
+        "WEB02",
+        "MATH"
+      ],
+      "birthdate": "1991-08-17",
+      "number": "898975366",
+      "office": "DG-010",
+      "category": "prof"
+    },
+    {
+      "lastname": "Lucille",
+      "firstname": "Zeeba",
+      "email": [
+        "lucille.zeeba@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "WEB02",
+        "MATH",
+        "PROG",
+        "NETWORK",
+        "WEB03",
+        "ALGO02",
+        "WEB01",
+        "OOC",
+        "ARCHI02",
+        "ARCHI01",
+        "OOP"
+      ],
+      "birthdate": "1962-10-09",
+      "number": "184685666",
+      "office": "DG-382",
+      "category": "prof"
+    },
+    {
+      "lastname": "Hettie",
+      "firstname": "Alwin",
+      "email": [
+        "hettie.alwin@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "MathSup",
+        "MATH",
+        "PROG",
+        "OOC",
+        "WEB02",
+        "NETWORK"
+      ],
+      "birthdate": "1981-08-24",
+      "number": "808638354",
+      "office": "DG-393",
+      "category": "enseignant chercheur"
+    },
+    {
+      "lastname": "Codie",
+      "firstname": "Judye",
+      "email": [
+        "codie.judye@univ-grenoble-alpes.fr"
+      ],
+      "taught_modules": [
+        "NETWORK",
+        "WEB02",
+        "MATH",
+        "WEB01",
+        "ARCHI02",
+        "WEB03",
+        "OOP",
+        "ALGO01"
+      ],
+      "birthdate": "1973-07-17",
+      "number": "346070450",
+      "office": "DG-296",
+      "cstudentsategory": "prof"
+    }
+  ],
+  "modules": [
+    {
+      "code_module": "OOP",
+      "coefficient": 30,
+      "description": "Object-oriented programming concepts, principles, and design patterns.",
+      "label": "Object-Oriented Programming",
+      "evaluations": [
+        {
+          "type": "lab",
+          "coefficient": 10
+        },
+        {
+          "type": "project",
+          "coefficient": 10
+        },
+        {
+          "type": "exam",
+          "coefficient": 10
+        }
+      ],
+      "registeredStudents": [
+        "555094194B",
+        "186138761H",
+        "687153635I",
+        "455335402V",
+        "767368803F",
+        "240007468Q",
+        "582302889H",
+        "102308189G",
+        "876351786I",
+        "773732696W",
+        "053829612T",
+        "227027332N",
+        "707088825Q",
+        "894706194Y",
+        "551304872Y",
+        "120467439I",
+        "998395933E",
+        "202446906V",
+        "593255868K",
+        "298495944R",
+        "462174434H",
+        "186633623X",
+        "603791378B",
+        "659695203J",
+        "383615303K",
+        "104936959P",
+        "023779818D",
+        "374857549G",
+        "257928250U",
+        "821173080O",
+        "377650313Y",
+        "158189725V",
+        "084911100J",
+        "749008351V",
+        "281128819D",
+        "244836341A",
+        "327811923R",
+        "979529609U",
+        "811568751A",
+        "900321357D",
+        "840524570C",
+        "980040169A",
+        "311648187E",
+        "396401189W",
+        "310185458L",
+        "576377250E",
+        "399644946S",
+        "927480596C",
+        "743622605N",
+        "086661922T",
+        "845753204F",
+        "154954583F"
+      ],
+      "profs": [
+        "697453889",
+        "056891098",
+        "402255813",
+        "251962930",
+        "867478389",
+        "401417699",
+        "318985765",
+        "203780717",
+        "898975366",
+        "184685666",
+        "346070450"
+      ]
+    },
+    {
+      "code_module": "OOC",
+      "coefficient": 20,
+      "description": "Advanced object-oriented concepts including abstraction, inheritance, polymorphism, and encapsulation.",
+      "label": "Object-Oriented Concepts",
+      "evaluations": [
+        {
+          "type": "lab",
+          "coefficient": 10
+        },
+        {
+          "type": "exam",
+          "coefficient": 10
+        }
+      ],
+      "registeredStudents": [
+        "555094194B",
+        "687153635I",
+        "455335402V",
+        "315961217X",
+        "767368803F",
+        "240007468Q",
+        "582302889H",
+        "065564743E",
+        "424634338O",
+        "876351786I",
+        "372088353S",
+        "227027332N",
+        "847562529Z",
+        "707088825Q",
+        "894706194Y",
+        "551304872Y",
+        "184858689V",
+        "998395933E",
+        "202446906V",
+        "298495944R",
+        "462174434H",
+        "186633623X",
+        "603791378B",
+        "659695203J",
+        "373496379F",
+        "374857549G",
+        "572009609F",
+        "313292571B",
+        "257928250U",
+        "377650313Y",
+        "657087664M",
+        "089599263W",
+        "749008351V",
+        "281128819D",
+        "327811923R",
+        "811568751A",
+        "843075152J",
+        "311648187E",
+        "396401189W",
+        "310185458L",
+        "576377250E",
+        "399644946S",
+        "927480596C",
+        "635300583R",
+        "743622605N",
+        "918312269K",
+        "086661922T",
+        "845753204F",
+        "154954583F"
+      ],
+      "profs": [
+        "697453889",
+        "054211556",
+        "518594213",
+        "402255813",
+        "395452521",
+        "251962930",
+        "107378046",
+        "401417699",
+        "318985765",
+        "574025206",
+        "203780717",
+        "184685666",
+        "808638354"
+      ]
+    },
+    {
+      "code_module": "ALGO01",
+      "coefficient": 30,
+      "description": "Fundamental algorithms, problem-solving techniques, and complexity analysis.",
+      "label": "Algorithms I",
+      "evaluations": [
+        {
+          "type": "lab",
+          "coefficient": 15
+        },
+        {
+          "type": "exam",
+          "coefficient": 15
+        }
+      ],
+      "registeredStudents": [
+        "455337933C",
+        "555094194B",
+        "687153635I",
+        "455335402V",
+        "315961217X",
+        "767368803F",
+        "240007468Q",
+        "102308189G",
+        "876351786I",
+        "537323096N",
+        "053829612T",
+        "227027332N",
+        "847562529Z",
+        "707088825Q",
+        "551304872Y",
+        "120467439I",
+        "998395933E",
+        "202446906V",
+        "298495944R",
+        "598623389R",
+        "809664719T",
+        "647964155P",
+        "603791378B",
+        "383615303K",
+        "382974888W",
+        "023779818D",
+        "374857549G",
+        "257928250U",
+        "821173080O",
+        "377650313Y",
+        "158189725V",
+        "084911100J",
+        "749008351V",
+        "244836341A",
+        "092778481T",
+        "979529609U",
+        "811568751A",
+        "840524570C",
+        "046533043D",
+        "196930581U",
+        "843075152J",
+        "396401189W",
+        "310185458L",
+        "918312269K",
+        "086661922T",
+        "154954583F"
+      ],
+      "profs": [
+        "697453889",
+        "402255813",
+        "251962930",
+        "107378046",
+        "401417699",
+        "318985765",
+        "574025206",
+        "346070450"
+      ]
+    },
+    {
+      "code_module": "ALGO02",
+      "coefficient": 30,
+      "description": "Advanced algorithms, data structures, optimization, and algorithmic problem solving.",
+      "label": "Algorithms II",
+      "evaluations": [
+        {
+          "type": "lab",
+          "coefficient": 10
+        },
+        {
+          "type": "project",
+          "coefficient": 10
+        },
+        {
+          "type": "exam",
+          "coefficient": 10
+        }
+      ],
+      "registeredStudents": [
+        "455337933C",
+        "186138761H",
+        "687153635I",
+        "455335402V",
+        "315961217X",
+        "767368803F",
+        "240007468Q",
+        "582302889H",
+        "102308189G",
+        "065564743E",
+        "876351786I",
+        "773732696W",
+        "372088353S",
+        "227027332N",
+        "847562529Z",
+        "707088825Q",
+        "894706194Y",
+        "551304872Y",
+        "998395933E",
+        "202446906V",
+        "593255868K",
+        "298495944R",
+        "462174434H",
+        "809664719T",
+        "603791378B",
+        "659695203J",
+        "104936959P",
+        "023779818D",
+        "374857549G",
+        "313292571B",
+        "257928250U",
+        "377650313Y",
+        "177913237L",
+        "084911100J",
+        "089599263W",
+        "749008351V",
+        "281128819D",
+        "244836341A",
+        "327811923R",
+        "979529609U",
+        "811568751A",
+        "840524570C",
+        "396401189W",
+        "310185458L",
+        "399644946S",
+        "927480596C",
+        "743622605N",
+        "146137269C",
+        "918312269K",
+        "086661922T",
+        "845753204F",
+        "154954583F"
+      ],
+      "profs": [
+        "697453889",
+        "518594213",
+        "251962930",
+        "401417699",
+        "898975366",
+        "184685666"
+      ]
+    },
+    {
+      "code_module": "MATH",
+      "coefficient": 20,
+      "description": "Mathematical foundations supporting computer science and software development.",
+      "label": "Mathematics",
+      "evaluations": [
+        {
+          "type": "exam",
+          "coefficient": 20
+        }
+      ],
+      "registeredStudents": [
+        "455337933C",
+        "555094194B",
+        "687153635I",
+        "767368803F",
+        "240007468Q",
+        "102308189G",
+        "424634338O",
+        "773732696W",
+        "053829612T",
+        "227027332N",
+        "847562529Z",
+        "707088825Q",
+        "894706194Y",
+        "551304872Y",
+        "998395933E",
+        "202446906V",
+        "298495944R",
+        "462174434H",
+        "603791378B",
+        "383615303K",
+        "023779818D",
+        "373496379F",
+        "374857549G",
+        "313292571B",
+        "257928250U",
+        "821173080O",
+        "377650313Y",
+        "158189725V",
+        "177913237L",
+        "749008351V",
+        "281128819D",
+        "244836341A",
+        "811568751A",
+        "134783154M",
+        "840524570C",
+        "980040169A",
+        "843075152J",
+        "033486494C",
+        "396401189W",
+        "576377250E",
+        "927480596C",
+        "743622605N",
+        "918312269K",
+        "086661922T",
+        "154954583F"
+      ],
+      "profs": [
+        "054211556",
+        "518594213",
+        "395452521",
+        "251962930",
+        "107378046",
+        "867478389",
+        "401417699",
+        "318985765",
+        "574025206",
+        "203780717",
+        "898975366",
+        "184685666",
+        "808638354",
+        "346070450"
+      ]
+    },
+    {
+      "code_module": "MathSup",
+      "coefficient": 15,
+      "description": "Supplementary mathematics covering additional concepts useful for computing and engineering.",
+      "label": "Supplementary Mathematics",
+      "evaluations": [
+        {
+          "type": "lab",
+          "coefficient": 7
+        },
+        {
+          "type": "exam",
+          "coefficient": 7
+        }
+      ],
+      "registeredStudents": [
+        "449898176M",
+        "186138761H",
+        "687153635I",
+        "767368803F",
+        "240007468Q",
+        "102308189G",
+        "065564743E",
+        "876351786I",
+        "537323096N",
+        "053829612T",
+        "372088353S",
+        "847562529Z",
+        "707088825Q",
+        "894706194Y",
+        "551304872Y",
+        "998395933E",
+        "124700434L",
+        "202446906V",
+        "298495944R",
+        "462174434H",
+        "647964155P",
+        "603791378B",
+        "383615303K",
+        "104936959P",
+        "382974888W",
+        "023779818D",
+        "373496379F",
+        "374857549G",
+        "313292571B",
+        "257928250U",
+        "821173080O",
+        "377650313Y",
+        "158189725V",
+        "177913237L",
+        "084911100J",
+        "089599263W",
+        "749008351V",
+        "244836341A",
+        "327811923R",
+        "811568751A",
+        "840524570C",
+        "046533043D",
+        "980040169A",
+        "843075152J",
+        "033486494C",
+        "396401189W",
+        "310185458L",
+        "576377250E",
+        "399644946S",
+        "927480596C",
+        "918312269K",
+        "086661922T",
+        "154954583F"
+      ],
+      "profs": [
+        "697453889",
+        "054211556",
+        "518594213",
+        "547367905",
+        "056891098",
+        "402255813",
+        "395452521",
+        "251962930",
+        "401417699",
+        "318985765",
+        "898975366",
+        "808638354"
+      ]
+    },
+    {
+      "code_module": "fullstack",
+      "coefficient": 50,
+      "description": "Development of complete web applications across frontend, backend, databases, and APIs.",
+      "label": "Full-Stack Development",
+      "evaluations": [
+        {
+          "type": "lab",
+          "coefficient": 16
+        },
+        {
+          "type": "project",
+          "coefficient": 16
+        },
+        {
+          "type": "exam",
+          "coefficient": 16
+        }
+      ],
+      "registeredStudents": [],
+      "profs": []
+    },
+    {
+      "code_module": "PROG",
+      "coefficient": 40,
+      "description": "Programming fundamentals, software development practices, and implementation techniques.",
+      "label": "Programming",
+      "evaluations": [
+        {
+          "type": "lab",
+          "coefficient": 13
+        },
+        {
+          "type": "project",
+          "coefficient": 13
+        },
+        {
+          "type": "exam",
+          "coefficient": 13
+        }
+      ],
+      "registeredStudents": [
+        "687153635I",
+        "767368803F",
+        "240007468Q",
+        "582302889H",
+        "102308189G",
+        "065564743E",
+        "773732696W",
+        "227027332N",
+        "847562529Z",
+        "707088825Q",
+        "551304872Y",
+        "998395933E",
+        "124700434L",
+        "593255868K",
+        "298495944R",
+        "462174434H",
+        "598623389R",
+        "186633623X",
+        "603791378B",
+        "659695203J",
+        "383615303K",
+        "023779818D",
+        "373496379F",
+        "374857549G",
+        "572009609F",
+        "257928250U",
+        "377650313Y",
+        "158189725V",
+        "660680110J",
+        "657087664M",
+        "084911100J",
+        "089599263W",
+        "749008351V",
+        "244836341A",
+        "327811923R",
+        "811568751A",
+        "046533043D",
+        "980040169A",
+        "396401189W",
+        "576377250E",
+        "399644946S",
+        "927480596C",
+        "743622605N",
+        "086661922T"
+      ],
+      "profs": [
+        "518594213",
+        "318985765",
+        "548992314",
+        "184685666",
+        "808638354"
+      ]
+    },
+    {
+      "code_module": "NETWORK",
+      "coefficient": 25,
+      "description": "Computer networking fundamentals, protocols, architectures, and network services.",
+      "label": "Computer Networks",
+      "evaluations": [
+        {
+          "type": "lab",
+          "coefficient": 12
+        },
+        {
+          "type": "exam",
+          "coefficient": 12
+        }
+      ],
+      "registeredStudents": [
+        "240617031O",
+        "455337933C",
+        "376561737O",
+        "777553315T",
+        "455335402V",
+        "767368803F",
+        "240007468Q",
+        "582302889H",
+        "102308189G",
+        "065564743E",
+        "773732696W",
+        "537323096N",
+        "053829612T",
+        "372088353S",
+        "227027332N",
+        "847562529Z",
+        "707088825Q",
+        "894706194Y",
+        "551304872Y",
+        "998395933E",
+        "202446906V",
+        "593255868K",
+        "298495944R",
+        "462174434H",
+        "186633623X",
+        "647964155P",
+        "603791378B",
+        "383615303K",
+        "104936959P",
+        "023779818D",
+        "572009609F",
+        "313292571B",
+        "257928250U",
+        "821173080O",
+        "377650313Y",
+        "158189725V",
+        "084911100J",
+        "089599263W",
+        "749008351V",
+        "327811923R",
+        "811568751A",
+        "900321357D",
+        "134783154M",
+        "840524570C",
+        "843075152J",
+        "311648187E",
+        "396401189W",
+        "310185458L",
+        "141641524Q",
+        "399644946S",
+        "927480596C",
+        "743622605N",
+        "918312269K",
+        "086661922T",
+        "845753204F",
+        "154954583F"
+      ],
+      "profs": [
+        "518594213",
+        "056891098",
+        "251962930",
+        "107378046",
+        "401417699",
+        "318985765",
+        "898975366",
+        "184685666",
+        "808638354",
+        "346070450"
+      ]
+    },
+    {
+      "code_module": "WEB01",
+      "coefficient": 20,
+      "description": "Fundamentals of web development using HTML, CSS, and introductory client-side technologies.",
+      "label": "Web Development I",
+      "evaluations": [
+        {
+          "type": "lab",
+          "coefficient": 10
+        },
+        {
+          "type": "exam",
+          "coefficient": 10
+        }
+      ],
+      "registeredStudents": [
+        "657395330O",
+        "455337933C",
+        "555094194B",
+        "449898176M",
+        "186138761H",
+        "777553315T",
+        "687153635I",
+        "767368803F",
+        "240007468Q",
+        "102308189G",
+        "065564743E",
+        "876351786I",
+        "998095913G",
+        "372088353S",
+        "771433905R",
+        "847562529Z",
+        "707088825Q",
+        "551304872Y",
+        "998395933E",
+        "202446906V",
+        "593255868K",
+        "298495944R",
+        "462174434H",
+        "598623389R",
+        "809664719T",
+        "603791378B",
+        "659695203J",
+        "104936959P",
+        "023779818D",
+        "374857549G",
+        "572009609F",
+        "313292571B",
+        "257928250U",
+        "821173080O",
+        "377650313Y",
+        "158189725V",
+        "084911100J",
+        "089599263W",
+        "749008351V",
+        "281128819D",
+        "327811923R",
+        "979529609U",
+        "811568751A",
+        "134783154M",
+        "840524570C",
+        "033486494C",
+        "396401189W",
+        "310185458L",
+        "141641524Q",
+        "576377250E",
+        "399644946S",
+        "635300583R",
+        "743622605N",
+        "918312269K",
+        "086661922T",
+        "845753204F",
+        "154954583F"
+      ],
+      "profs": [
+        "697453889",
+        "054211556",
+        "518594213",
+        "251962930",
+        "318985765",
+        "898975366",
+        "184685666",
+        "346070450"
+      ]
+    },
+    {
+      "code_module": "WEB02",
+      "coefficient": 30,
+      "description": "Intermediate web development covering dynamic interfaces, JavaScript, and web APIs.",
+      "label": "Web Development II",
+      "evaluations": [
+        {
+          "type": "lab",
+          "coefficient": 10
+        },
+        {
+          "type": "project",
+          "coefficient": 10
+        },
+        {
+          "type": "exam",
+          "coefficient": 10
+        }
+      ],
+      "registeredStudents": [
+        "240617031O",
+        "455337933C",
+        "555094194B",
+        "687153635I",
+        "455335402V",
+        "315961217X",
+        "767368803F",
+        "240007468Q",
+        "582302889H",
+        "102308189G",
+        "876351786I",
+        "309561392X",
+        "053829612T",
+        "372088353S",
+        "847562529Z",
+        "551304872Y",
+        "120467439I",
+        "998395933E",
+        "358913136S",
+        "462174434H",
+        "598623389R",
+        "603791378B",
+        "659695203J",
+        "383615303K",
+        "104936959P",
+        "382974888W",
+        "023779818D",
+        "373496379F",
+        "374857549G",
+        "257928250U",
+        "377650313Y",
+        "158189725V",
+        "177913237L",
+        "084911100J",
+        "281128819D",
+        "327811923R",
+        "811568751A",
+        "033486494C",
+        "311648187E",
+        "396401189W",
+        "310185458L",
+        "399644946S",
+        "743622605N",
+        "918312269K",
+        "086661922T",
+        "154954583F"
+      ],
+      "profs": [
+        "697453889",
+        "518594213",
+        "056891098",
+        "402255813",
+        "395452521",
+        "251962930",
+        "867478389",
+        "401417699",
+        "548992314",
+        "898975366",
+        "184685666",
+        "808638354",
+        "346070450"
+      ]
+    },
+    {
+      "code_module": "WEB03",
+      "coefficient": 40,
+      "description": "Advanced web application development, architecture, performance, security, and deployment.",
+      "label": "Web Development III",
+      "evaluations": [
+        {
+          "type": "project",
+          "coefficient": 20
+        },
+        {
+          "type": "exam",
+          "coefficient": 20
+        }
+      ],
+      "registeredStudents": [
+        "240617031O",
+        "455337933C",
+        "186138761H",
+        "687153635I",
+        "315961217X",
+        "767368803F",
+        "240007468Q",
+        "065564743E",
+        "773732696W",
+        "998095913G",
+        "053829612T",
+        "227027332N",
+        "894706194Y",
+        "551304872Y",
+        "120467439I",
+        "998395933E",
+        "202446906V",
+        "298495944R",
+        "603791378B",
+        "383615303K",
+        "382974888W",
+        "373496379F",
+        "374857549G",
+        "313292571B",
+        "257928250U",
+        "821173080O",
+        "377650313Y",
+        "158189725V",
+        "177913237L",
+        "084911100J",
+        "749008351V",
+        "281128819D",
+        "244836341A",
+        "979529609U",
+        "811568751A",
+        "134783154M",
+        "980040169A",
+        "033486494C",
+        "396401189W",
+        "310185458L",
+        "141641524Q",
+        "576377250E",
+        "399644946S",
+        "927480596C",
+        "635300583R",
+        "918312269K",
+        "086661922T",
+        "845753204F",
+        "154954583F"
+      ],
+      "profs": [
+        "697453889",
+        "518594213",
+        "251962930",
+        "107378046",
+        "401417699",
+        "574025206",
+        "203780717",
+        "548992314",
+        "184685666",
+        "346070450"
+      ]
+    },
+    {
+      "code_module": "ARCHI01",
+      "coefficient": 25,
+      "description": "Fundamentals of software architecture, system organization, and architectural principles.",
+      "label": "Software Architecture I",
+      "evaluations": [
+        {
+          "type": "project",
+          "coefficient": 12
+        },
+        {
+          "type": "exam",
+          "coefficient": 12
+        }
+      ],
+      "registeredStudents": [
+        "240617031O",
+        "455337933C",
+        "555094194B",
+        "186138761H",
+        "687153635I",
+        "455335402V",
+        "315961217X",
+        "767368803F",
+        "240007468Q",
+        "582302889H",
+        "102308189G",
+        "065564743E",
+        "557000760R",
+        "876351786I",
+        "773732696W",
+        "998095913G",
+        "847562529Z",
+        "707088825Q",
+        "894706194Y",
+        "998395933E",
+        "593255868K",
+        "298495944R",
+        "462174434H",
+        "809664719T",
+        "186633623X",
+        "603791378B",
+        "383615303K",
+        "023779818D",
+        "374857549G",
+        "572009609F",
+        "313292571B",
+        "257928250U",
+        "377650313Y",
+        "158189725V",
+        "177913237L",
+        "089599263W",
+        "749008351V",
+        "244836341A",
+        "811568751A",
+        "900321357D",
+        "980040169A",
+        "843075152J",
+        "033486494C",
+        "311648187E",
+        "396401189W",
+        "576377250E",
+        "635300583R",
+        "743622605N",
+        "918312269K",
+        "086661922T",
+        "127684138X",
+        "154954583F"
+      ],
+      "profs": [
+        "697453889",
+        "518594213",
+        "401417699",
+        "318985765",
+        "574025206",
+        "184685666"
+      ]
+    },
+    {
+      "code_module": "ARCHI02",
+      "coefficient": 35,
+      "description": "Advanced software architecture, scalability, distributed systems, and architectural design.",
+      "label": "Software Architecture II",
+      "evaluations": [
+        {
+          "type": "lab",
+          "coefficient": 11
+        },
+        {
+          "type": "project",
+          "coefficient": 11
+        },
+        {
+          "type": "exam",
+          "coefficient": 11
+        }
+      ],
+      "registeredStudents": [
+        "455337933C",
+        "186138761H",
+        "687153635I",
+        "315961217X",
+        "767368803F",
+        "240007468Q",
+        "582302889H",
+        "102308189G",
+        "065564743E",
+        "876351786I",
+        "773732696W",
+        "053829612T",
+        "771433905R",
+        "227027332N",
+        "847562529Z",
+        "894706194Y",
+        "551304872Y",
+        "998395933E",
+        "202446906V",
+        "298495944R",
+        "462174434H",
+        "598623389R",
+        "603791378B",
+        "659695203J",
+        "127044627Q",
+        "383615303K",
+        "382974888W",
+        "023779818D",
+        "373496379F",
+        "572009609F",
+        "313292571B",
+        "257928250U",
+        "821173080O",
+        "377650313Y",
+        "158189725V",
+        "749008351V",
+        "327811923R",
+        "979529609U",
+        "811568751A",
+        "840524570C",
+        "046533043D",
+        "396401189W",
+        "576377250E",
+        "399644946S",
+        "743622605N",
+        "918312269K",
+        "086661922T",
+        "845753204F",
+        "154954583F"
+      ],
+      "profs": [
+        "697453889",
+        "054211556",
+        "518594213",
+        "056891098",
+        "402255813",
+        "251962930",
+        "318985765",
+        "184685666",
+        "346070450"
+      ]
+    }
+  ],
+  "responsibles": [
+    "697453889",
+    "547367905",
+    "251962930"
+  ]
+}

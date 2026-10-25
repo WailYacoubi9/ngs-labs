@@ -1,0 +1,22 @@
+{
+  "name": "mosig-server",
+  "version": "1.0.0",
+  "description": "REST API of the Mosig master, served with Express and with tiny-rest",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "start:scratch": "node index-scratch.js",
+    "test": "node --test test/api.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "body-parser": "^2.4.0",
+    "express": "^5.3.0",
+    "tiny-rest": "file:../tiny-rest"
+  }
+}

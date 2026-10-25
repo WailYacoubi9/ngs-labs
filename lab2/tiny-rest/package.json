@@ -1,0 +1,20 @@
+{
+  "name": "tiny-rest",
+  "version": "1.0.0",
+  "description": "A small Express-like REST server built on the native http package",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/router.test.js test/server.test.js"
+  },
+  "keywords": [
+    "rest",
+    "http",
+    "router"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20"
+  }
+}
