@@ -1,0 +1,471 @@
+openapi: 3.0.2
+info:
+  version: 1.0.0
+  title: Society API
+  description: >-
+    API of the house of games (Maison des jeux) in Grenoble, a board game
+    society that lends games to its members. Only the GET endpoints are
+    specified.
+  contact:
+    name: Wail Yacoubi
+    email: first.last@provider.com
+servers:
+  - url: https://localhost:8080/
+tags:
+  - name: Society
+    description: The society and the links to navigate the API
+  - name: Game
+    description: Games owned by the society
+  - name: Category
+    description: Categories of games
+  - name: Member
+    description: Members of the society, who borrow games
+components:
+  schemas:
+    Link:
+      type: object
+      properties:
+        href:
+          type: string
+      required:
+        - href
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+          example: game not found
+    Pagination:
+      type: object
+      properties:
+        page:
+          type: integer
+          example: 1
+        limit:
+          type: integer
+          example: 20
+        total:
+          type: integer
+          description: Number of elements in the whole collection.
+          example: 57
+    PageLinks:
+      type: object
+      description: >-
+        Links to the current page, and to the next and previous pages when
+        they exist.
+      properties:
+        self:
+          type: string
+          example: /games?page=1&limit=20
+        next:
+          type: string
+          example: /games?page=2&limit=20
+        previous:
+          type: string
+      required:
+        - self
+    Page:
+      type: object
+      properties:
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+        links:
+          $ref: '#/components/schemas/PageLinks'
+    Society:
+      type: object
+      properties:
+        name:
+          type: string
+          example: Maison des jeux
+        address:
+          type: string
+          example: 1 place de l'Exemple, 38000 Grenoble
+        _links:
+          type: object
+          properties:
+            games:
+              $ref: '#/components/schemas/Link'
+            categories:
+              $ref: '#/components/schemas/Link'
+            members:
+              $ref: '#/components/schemas/Link'
+    Game:
+      type: object
+      properties:
+        name:
+          type: string
+          description: The name of the game, which identifies it.
+          example: Catan
+        description:
+          type: string
+          example: Trade and build settlements on the island of Catan.
+        purchaseDate:
+          type: string
+          format: date
+          example: '2023-04-12'
+        condition:
+          type: string
+          enum:
+            - new
+            - good
+            - damaged
+        availability:
+          type: string
+          enum:
+            - available
+            - borrowed
+        category:
+          type: string
+          description: The name of the category of the game.
+          example: Strategy
+        _links:
+          type: object
+          properties:
+            category:
+              $ref: '#/components/schemas/Link'
+            borrower:
+              allOf:
+                - $ref: '#/components/schemas/Link'
+              description: Only present when the game is borrowed.
+    GameShort:
+      type: object
+      properties:
+        name:
+          type: string
+          example: Catan
+        availability:
+          type: string
+          enum:
+            - available
+            - borrowed
+        _links:
+          type: object
+          properties:
+            self:
+              $ref: '#/components/schemas/Link'
+    GamePage:
+      allOf:
+        - $ref: '#/components/schemas/Page'
+        - type: object
+          properties:
+            data:
+              type: array
+              items:
+                $ref: '#/components/schemas/GameShort'
+    Category:
+      type: object
+      properties:
+        name:
+          type: string
+          description: The name of the category, which identifies it.
+          example: Strategy
+        description:
+          type: string
+          example: Games where planning wins over luck.
+        numberOfGames:
+          type: integer
+          minimum: 0
+          description: Number of games of the society in this category.
+          example: 12
+        _links:
+          type: object
+          properties:
+            games:
+              $ref: '#/components/schemas/Link'
+    CategoryShort:
+      type: object
+      properties:
+        name:
+          type: string
+          example: Strategy
+        numberOfGames:
+          type: integer
+          minimum: 0
+          example: 12
+        _links:
+          type: object
+          properties:
+            self:
+              $ref: '#/components/schemas/Link'
+    CategoryPage:
+      allOf:
+        - $ref: '#/components/schemas/Page'
+        - type: object
+          properties:
+            data:
+              type: array
+              items:
+                $ref: '#/components/schemas/CategoryShort'
+    Member:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 42
+        firstName:
+          type: string
+          example: Jean
+        lastName:
+          type: string
+          example: Dupont
+        phoneNumber:
+          type: string
+          description: Kept as a string, for the leading 0 or + and the spaces.
+          example: '+33 6 12 34 56 78'
+    MemberShort:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 42
+        name:
+          type: string
+          example: Jean Dupont
+        _links:
+          type: object
+          properties:
+            self:
+              $ref: '#/components/schemas/Link'
+    MemberPage:
+      allOf:
+        - $ref: '#/components/schemas/Page'
+        - type: object
+          properties:
+            data:
+              type: array
+              items:
+                $ref: '#/components/schemas/MemberShort'
+  parameters:
+    pageParam:
+      name: page
+      in: query
+      description: The page to return.
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+        default: 1
+    limitParam:
+      name: limit
+      in: query
+      description: Max number of elements to return.
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 100
+        default: 20
+    Game_name:
+      name: name
+      in: path
+      required: true
+      description: >-
+        The name of the game, URL-encoded when it contains spaces
+        (Ticket%20to%20Ride). This property is a unique ID.
+      schema:
+        type: string
+        example: Catan
+    Category_name:
+      name: name
+      in: path
+      required: true
+      description: The name of the category. This property is a unique ID.
+      schema:
+        type: string
+        example: Strategy
+    Member_id:
+      name: id
+      in: path
+      required: true
+      description: The id of the member. This property is a unique ID.
+      schema:
+        type: integer
+        example: 42
+  responses:
+    InvalidPagination:
+      description: The page or limit parameter is not a valid integer, or is out of range.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    GameNotFound:
+      description: No game has this name.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    CategoryNotFound:
+      description: No category has this name.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    MemberNotFound:
+      description: No member has this id.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+paths:
+  /:
+    get:
+      summary: Get the society, with links to its games, categories and members
+      tags:
+        - Society
+      responses:
+        '200':
+          description: The society is returned
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Society'
+  /games/:
+    get:
+      summary: List all the games of the society
+      tags:
+        - Game
+      parameters:
+        - $ref: '#/components/parameters/pageParam'
+        - $ref: '#/components/parameters/limitParam'
+      responses:
+        '200':
+          description: One page of games, with at most limit games
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GamePage'
+        '400':
+          $ref: '#/components/responses/InvalidPagination'
+  /games/{name}/:
+    get:
+      summary: Get one game, including the name of its category
+      tags:
+        - Game
+      parameters:
+        - $ref: '#/components/parameters/Game_name'
+      responses:
+        '200':
+          description: The game is returned
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Game'
+        '404':
+          $ref: '#/components/responses/GameNotFound'
+  /games/{name}/borrower/:
+    get:
+      summary: Get the member who borrowed a game
+      tags:
+        - Game
+        - Member
+      parameters:
+        - $ref: '#/components/parameters/Game_name'
+      responses:
+        '200':
+          description: The member who borrowed the game is returned
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Member'
+        '404':
+          description: >-
+            No game has this name, or the game is available, so nobody
+            borrowed it.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                unknownGame:
+                  value:
+                    error: game not found
+                notBorrowed:
+                  value:
+                    error: game not borrowed
+  /categories/:
+    get:
+      summary: List the categories of games
+      tags:
+        - Category
+      parameters:
+        - $ref: '#/components/parameters/pageParam'
+        - $ref: '#/components/parameters/limitParam'
+      responses:
+        '200':
+          description: One page of categories
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CategoryPage'
+        '400':
+          $ref: '#/components/responses/InvalidPagination'
+  /categories/{name}/:
+    get:
+      summary: Get one category
+      tags:
+        - Category
+      parameters:
+        - $ref: '#/components/parameters/Category_name'
+      responses:
+        '200':
+          description: The category is returned
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Category'
+        '404':
+          $ref: '#/components/responses/CategoryNotFound'
+  /categories/{name}/games/:
+    get:
+      summary: List the games of one category
+      tags:
+        - Category
+        - Game
+      parameters:
+        - $ref: '#/components/parameters/Category_name'
+        - $ref: '#/components/parameters/pageParam'
+        - $ref: '#/components/parameters/limitParam'
+      responses:
+        '200':
+          description: One page of the games of the category, with at most limit games
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GamePage'
+        '400':
+          $ref: '#/components/responses/InvalidPagination'
+        '404':
+          $ref: '#/components/responses/CategoryNotFound'
+  /members/:
+    get:
+      summary: List the members of the society
+      tags:
+        - Member
+      parameters:
+        - $ref: '#/components/parameters/pageParam'
+        - $ref: '#/components/parameters/limitParam'
+      responses:
+        '200':
+          description: One page of members
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MemberPage'
+        '400':
+          $ref: '#/components/responses/InvalidPagination'
+  /members/{id}/:
+    get:
+      summary: Get one member
+      tags:
+        - Member
+      parameters:
+        - $ref: '#/components/parameters/Member_id'
+      responses:
+        '200':
+          description: The member is returned
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Member'
+        '404':
+          $ref: '#/components/responses/MemberNotFound'
